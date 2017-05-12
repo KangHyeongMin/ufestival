@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+  
+  root 'home#index'
   get 'home/index'
+  get 'team1' => 'home#team1'
+  get 'team2' => 'home#team2'
+  get 'team3' => 'home#team3'
+  get 'team4' => 'home#team4'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
