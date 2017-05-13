@@ -6,14 +6,18 @@
         <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
         <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1">
         <title>UNIST 봄축제</title>
-        <link rel="stylesheet" type="text/css"  href="style.css" />
+        
+        <%= csrf_meta_tags %>
+
         <meta charset = 'utf-8'>
         <script
             src="https://code.jquery.com/jquery-3.2.1.js"
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
             crossorigin="anonymous">
         </script>
-        <script type="text/javascript" src="javascript.js"></script>
+        <%= stylesheet_link_tag "team1style.css" %>
+        <%= javascript_include_tag "team1js.js" %>
+        <!--<script type="text/javascript" src="javascript.js"></script>-->
         
         <!-- Countdown Timer -->
     </head>
@@ -65,7 +69,7 @@
         <!--    </ul>-->
         <!--</nav>-->
 
-        <div class="bgimage" id="test"> 
+        <div class="bgimage" id="test" style="background-image: url('<%=image_path("team1/img/main.png")%>');"> 
             <div class="first"> 
                 <p id="start">　</p>
             </div>
@@ -76,29 +80,29 @@
         <section class="Container">
             <section class="container1">
                 <article class="picture" id="picture1">
-                    <img class="bb" src="../img/main/5.svg/">
+                    <img class="bb" src="<%=image_path("team1/img/main/5.svg")%>" >
                     <p>주간부스</p> 
                 </article>
                 <article class="picture" id="picture2">
-                    <img class="bb" src="../img/main/3.svg"/>
+                    <img class="bb" src="<%=image_path("team1/img/main/3.svg")%>"/>
                     <p>전시회</p>
                 </article>
                 <article class="picture" id="picture3">
-                    <img class="bb" src="../img/main/2.svg"/>
+                    <img class="bb" src="<%=image_path("team1/img/main/2.svg")%>"/>
                     <p>푸드 트럭</p>
                 </article>
             </section>
             <section class="container2">
                 <article class="picture" id="picture6">
-                    <img class="bb" src="../img/main/6.svg"/>
+                    <img class="bb" src="<%=image_path("team1/img/main/6.svg")%>"/>
                     <p> 공연</p>
                 </article>
                 <article class="picture" id="picture4">
-                    <img class="bb" src="../img/main/4.svg"/>
+                    <img class="bb" src="<%=image_path("team1/img/main/4.svg")%>"/>
                     <p>야간부스</p>
                 </article>
                 <article class="picture" id="picture5">
-                    <img class="bb" src="../img/main/1.svg"/>
+                    <img class="bb" src="<%=image_path("team1/img/main/1.svg")%>"/>
                     <p>이벤트</p>
                 </article>
             </section>
@@ -111,35 +115,35 @@
                 
                 <div class="morning_booth" id="dt1_seat1">
                     <a class="click" href="#open0">
-                        <img class="ya" src="img/number_1-4.png"/>
+                        <img class="ya" src="<%=image_path("team1/img/number_1-4.png")%>"/>
                     </a>
                 </div>
             
                 <div class="morning_booth" id="dt1_seat2">
                     <a class="click" href="#open1">
-                        <img class="ya" src="img/number_5-8.png"/>
+                        <img class="ya" src="<%=image_path("team1/img/number_5-8.png")%>"/>
                     </a>
                 </div>
                 
                 <div class="morning_booth" id="dt1_seat3">
                     <a class="click" href="#open2">
-                        <img class="ya" src="img/number_9-11.png"/>
+                        <img class="ya" src="<%=image_path("team1/img/number_9-11.png")%>"/>
                     </a>
                 </div>
                 
             </div>
             
-            <img id ="morningbooth" src="img/morning_background.png"/>
+            <img id ="morningbooth" src="<%=image_path("team1/img/morning_background.png")%>"/>
             
             <div class ="detail1_b">
                 <div class="morning_booth" id="dt1_seat4">
                     <a class="click" href="#open3">
-                        <img class="ya" src="img/nmber_12-15.png"/>
+                        <img class="ya" src="<%=image_path("team1/img/nmber_12-15.png")%>"/>
                     </a>
                 </div>
                 <div class="morning_booth" id="dt1_seat5">
                     <a class="click" href="#open4">
-                        <img class="ya" src="img/nmber_16-19.png"/>
+                        <img class="ya" src="<%=image_path("team1/img/nmber_16-19.png")%>"/>
                     </a>
                 </div>
             </div>
@@ -147,28 +151,28 @@
         
         <!--2번 사진 해당 내용-->
         <div class="empty_space6"></div>
-        <div class = "detail" id ="detail_2">
+        <div class = "detail" id ="detail_2" style="background-image: url("<%=image_path("team1/img/gym.png")%>;">
                 
             <div class ="detail2_a">
                 <div class="gym" id="dt2_seat1">
-                    <img class="club" src="img/hexa.png"/>
+                    <img class="club" src="<%=image_path("team1/img/hexa.png")%>"/>
                 
                 </div>
                 <div class="gym" id="dt2_seat2">
-                   <img class="club" src="img/graphos.png"/>
+                   <img class="club" src="<%=image_path("team1/img/graphos.png")%>"/>
                 </div>
                 </div>
                 <div class ="detail2_b">
                 <div class="gym" id="dt2_seat3">
-                    <img class="club" src="img/su.png"/>
+                    <img class="club" src="<%=image_path("team1/img/su.png")%>"/>
                 </div>
                 </div>
             <div class ="detail2_c">
                 <div class="gym" id="dt2_seat4">
-                   <img class="club" src="img/ivf.png"/>
+                   <img class="club" src="<%=image_path("team1/img/ivf.png")%>"/>
                 </div>
                 <div class="gym" id="dt2_seat5">
-                    <img class="club" src="img/joker.png"/>
+                    <img class="club" src="<%=image_path("team1/img/joker.png")%>"/>
                 </div>
             </div>
         </div>
@@ -178,22 +182,22 @@
         <div class = "detail" id ="detail_3">
             <div class=detail3_a>
                 <div class="food_truck" id="dt3_seat1">
-                    <img class="truck" src="../img/foodtruck-1.svg">
+                    <img class="truck" src="<%=image_path("team1/img/foodtruck-1.svg")%>">
                     <div class="trucks"> Hotdog </div>
                 </div>
                 
                 <div class="food_truck" id="dt3_seat2">
-                    <img class="truck" src="../img/foodtruck-2.svg">
+                    <img class="truck" src="<%=image_path("team1/img/foodtruck-2.svg")%>">
                     <div class="trucks"> Churros </div>
                 </div>
             </div>
             <div class="detail3_b">
                 <div class="food_truck" id="dt3_seat3">
-                    <img class="truck" src="../img/foodtruck-3.svg">
+                    <img class="truck" src="<%=image_path("team1/img/foodtruck-3.svg")%>">
                     <div class="trucks"> Grilled chicken </div>
                 </div>
                 <div class="food_truck" id="dt3_seat4">
-                    <img class="truck" src="../img/foodtruck-4.svg">
+                    <img class="truck" src="<%=image_path("team1/img/foodtruck-4.svg")%>">
                     <div class="trucks"> Cube steak </div>
                 </div>
             </div>
@@ -202,11 +206,11 @@
         <!--4번 사진 해당 내용-->
         <div class="empty_space3"></div>
         <div id="detail_4">
-            <img id="dt4_seat2" src="img/ufestival 2.jpg">
+            <img id="dt4_seat2" src="<%=image_path("team1/img/ufestival 2.jpg")%>">
         
             <!-- 산이 비디오 -->
             <div class="video">
-                <video src="video/san-e.mp4" controls="controls"
+                <video src="<%=video_path("san-e.mp4")%>" controls="controls"
                        height:"auto" width="60%">
                 </video>
             </div>
@@ -218,29 +222,29 @@
             <div class = "detail5_a">
             <div class="night_booth" id="dt5_seat1">
                 <a class="click" href="#open5">
-                    <img class="nightt" src="img/n-12.png"/>
+                    <img class="nightt" src="<%=image_path("team1/img/n-12.png")%>"/>
                 </a>
             
             </div>
             <div class="night_booth" id="dt5_seat2">
                 <a class="click" href="#open6">
-                    <img class="nightt" src="img/n9.png"/>
+                    <img class="nightt" src="<%=image_path("team1/img/n9.png")%>"/>
                 </a>
             
             </div>
             </div>
         
-            <img id ="nightbooth" src="img/nightbooth.jpg"/>
+            <img id ="nightbooth" src="<%=image_path("team1/img/nightbooth.jpg")%>"/>
             
             <div class = "detail5_b">
             <div class="night_booth" id="dt5_seat3">
                 <a class="click" href="#open7">
-                    <img class="nightt" src="img/n6.png"/>
+                    <img class="nightt" src="<%=image_path("team1/img/n6.png")%>"/>
                 </a>
             </div>
             <div class="night_booth" id="dt5_seat4">
                 <a class="click" href="#open8">
-                        <img class="nightt" src="img/n3.png"/>
+                        <img class="nightt" src="<%=image_path("team1/img/n3.png")%>"/>
                 </a>
             </div>
             </div>
@@ -251,7 +255,7 @@
         <div id ="detail_6">
             <div class="detail6_a">
                 <div id="dt6_seat1">
-                    <img src="img/event.png" id="dt6_img"/>
+                    <img src="<%=image_path("team1/img/event.png")%>" id="dt6_img"/>
                 </div>
             </div>
         </div>
@@ -262,44 +266,44 @@
         <div class="white_content" id="open0">
             <div class="white_content_style">
                 <a class="close" href="#close">X</a>
-                <article class="booth_picture"><img src="img/booth img/Day-Booth1.png"></br></br></br></article>
-                <article class="booth_picture"><img src="img/booth img/Day-Booth2.png"></br></br></br></article>
-                <article class="booth_picture"><img src="img/booth img/Day-Booth3.png"></article>
+                <article class="booth_picture"><img src="<%=image_path("team1/img/booth img/Day-Booth1.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img src="<%=image_path("team1/img/booth img/Day-Booth2.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img src="<%=image_path("team1/img/booth img/Day-Booth3.png")%>"></article>
             </div>
         </div>
 
         <div class="white_content" id="open1">
             <div class="white_content_style">
                 <a class="close" href="#close">X</a>
-                <article class="booth_picture"><img class="me" src="img/booth img/Day-Booth1.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Day-Booth2.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Day-Booth3.png"></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Day-Booth1.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Day-Booth2.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Day-Booth3.png")%>"></article>
             </div>
         </div>
         
         <div class="white_content" id="open2">
             <div class="white_content_style">
                 <a class="close" href="#close">X</a>
-                <article class="booth_picture"><img class="me" src="img/booth img/Day-Booth1.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Day-Booth2.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Day-Booth3.png"></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Day-Booth1.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Day-Booth2.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Day-Booth3.png")%>"></article>
             </div>
         </div>
         
         <div class="white_content" id="open3">
             <div class="white_content_style">
                 <a class="close" href="#close">X</a>
-                <article class="booth_picture"><img class="me" src="img/booth img/Day-Booth1.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Day-Booth2.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Day-Booth3.png"></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Day-Booth1.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Day-Booth2.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Day-Booth3.png")%>"></article>
             </div>
         </div>
         <div class="white_content" id="open4">
             <div class="white_content_style">
                 <a class="close" href="#close">X</a>
-                <article class="booth_picture"><img class="me"  src="img/booth img/Day-Booth1.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Day-Booth2.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Day-Booth3.png"></article>
+                <article class="booth_picture"><img class="me"  src="<%=image_path("team1/img/booth img/Day-Booth1.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Day-Booth2.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Day-Booth3.png")%>"></article>
             </div>
         </div>
         
@@ -308,18 +312,18 @@
         <div class="white_content" id="open5">
             <div class="white_content_style">
                 <a class="close" href="#close">X</a>
-                <article class="booth_picture"><img class="me"  src="img/booth img/Night-Booth1.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me"  src="img/booth img/Night-Booth2.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me"  src="img/booth img/Night-Booth3.png"></article>
+                <article class="booth_picture"><img class="me"  src="<%=image_path("team1/img/booth img/Night-Booth1.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me"  src="<%=image_path("team1/img/booth img/Night-Booth2.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me"  src="<%=image_path("team1/img/booth img/Night-Booth3.png")%>"></article>
             </div>
         </div>
         
         <div class="white_content" id="open6">
             <div class="white_content_style">
                 <a class="close" href="#close">X</a>
-                <article class="booth_picture"><img class="me" src="img/booth img/Night-Booth1.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Night-Booth2.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Night-Booth3.png"></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Night-Booth1.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Night-Booth2.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Night-Booth3.png")%>"></article>
             </div>
         </div>
         
@@ -327,18 +331,18 @@
         <div class="white_content" id="open7">
             <div class="white_content_style">
                 <a class="close" href="#close">X</a>
-                <article class="booth_picture"><img class="me" src="img/booth img/Night-Booth1.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Night-Booth2.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Night-Booth3.png"></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Night-Booth1.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Night-Booth2.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Night-Booth3.png")%>"></article>
             </div>
         </div>
         
        <div class="white_content" id="open8">
             <div class="white_content_style">
                 <a class="close" href="#close">X</a>
-                <article class="booth_picture"><img class="me" src="img/booth img/Night-Booth1.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Night-Booth2.png"></br></br></br></article>
-                <article class="booth_picture"><img class="me" src="img/booth img/Night-Booth3.png"></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Night-Booth1.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Night-Booth2.png")%>"></br></br></br></article>
+                <article class="booth_picture"><img class="me" src="<%=image_path("team1/img/booth img/Night-Booth3.png")%>"></article>
             </div>
         </div>
 
@@ -351,8 +355,8 @@
 
         <!--하단 내용 / 스폰서-->
         <div class="footer">
-            <img class="sound" src="img/sound3.png" style="width:100px" align="right"/>
-            <img class="uni_lion" src="img/uni_lion2.png" style="width:100px" align="right"/>
+            <img class="sound" src="<%=image_path("team1/img/sound3.png")%>" style="width:100px" align="right"/>
+            <img class="uni_lion" src="<%=image_path("team1/img/uni_lion2.png")%>" style="width:100px" align="right"/>
             <div class="content " style="text-align:left">
                 <p >멋쟁이 사자처럼 x SOUND</p>
                 <p>멋쟁이 사자처럼 페이스북: <a href="https://www.facebook.com/likelion.UNIST/?fref=ts">https://www.facebook.com/likelion.UNIST/?fref=ts</a></p>
@@ -362,7 +366,7 @@
 
         <!--위로 가기 버튼-->
         <div class="gotop">
-            <img src="img/up-arrow.png" width="50px" height="50px">
+            <img src="<%=image_path("team1/img/up-arrow.png")%>" width="50px" height="50px">
         </div>
         
         <!--Boot strap 관련-->
