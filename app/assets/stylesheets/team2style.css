@@ -1,9 +1,10 @@
-@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+/*@import url(//fonts.googleapis.com/earlyaccess/hanna.css);*/
 
 *
 {
     margin:0;
-    font-family: 'hanna', serif;
+    /*font-family: 'hanna', serif;*/
+    font-family:BMDOHYEON_ttf;
 }
 div .btn-outline-info
 {
@@ -19,8 +20,8 @@ div .btn-outline-info:hover
     font-family: BMDOHYEON_otf;
     font-family: BMDOHYEON_ttf;
     
-    src: url(/assets/BMDOHYEON_ttf.ttf);
-    src: url(/assets/BMDOHYEON_otf.otf);
+    src: url(/fonts/BMDOHYEON_ttf.ttf);
+    src: url(/fonts/BMDOHYEON_otf.otf);
 }
 .background{
     height:100vh;

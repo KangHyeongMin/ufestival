@@ -1,14 +1,18 @@
 @font-face {
     font-family:"Art Brewery";
-    src:url('Fonts/Art Brewery.ttf');
+    src:url('/fonts/Art_Brewery.ttf');
 }
 @font-face {
     font-family:"orange juice";
-    src:url('Fonts/orange juice 2.0.ttf');
+    src:url('/fonts/orange_juice.ttf');
 }
 @font-face {
     font-family:"foot friends";
-    src:url('Fonts/foot friends.ttf');
+    src:url('/fonts/foot_friends.ttf');
+}
+@font-face {
+    font-family:"toy";
+    src:url('/fonts/toy.ttf');
 }
 *{
     margin : 0;
