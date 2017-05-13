@@ -1,16 +1,148 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>2팀</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
-  <h1>Home#team2</h1>
-  <p>this is U-festival test page</p>
-  
-</body>
+  <html xml:lang="kr" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--<link rel="stylesheet" type="text/css" href="stylesheet.css">-->
+           <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <!--<script src="script.js"></script>-->
+        <%= stylesheet_link_tag "team2style.css" %>
+        <%= javascript_include_tag "team2js.js" %>
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">        
+    </head>
+    <body>
+        <!-- 네비게이션 바 -->
+        <nav class="d-flex align-items-center d-flex-row mynav">
+          <!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">-->
+          <!--  <span class="navbar-toggler-icon"></span>-->
+          <!--</button>-->
+<!-- 지우지마 -->
+          <h2 href="#" style="width:50%; line-height:50px; font-size:20px; margin-left:2%; margin-bottom:0"> UNIST 9th S/F</h2>
+<!-- 지우지마 -->
+          <div class="d-flex d-flex-row mynav2" style="width:40%">
+                <button type="button" class="nav-link btn btn-secondary btn-sm change_korean" href="">KOR</button><button type="button"  class="nav-link btn btn-secondary btn-sm change_english" href="">ENG</button>
+          </div>
+        </nav>
+ 
+        <!-- 포스터 -->
+        <div class="background d-flex justify-content-center flex-column align-items-center" style="background-image: url('<%=image_path("team2/festival_back.jpeg")%>');"> 
+            <div class="main_con d-flex justify-content-center flex-column align-items-center">            
+                <div class="young my-2"><div class="young2 ko">청춘이야</div><div class="young2 en">CHEONGCHUN-IYA</div></div>
+                <div class="d-flex flex-row my-3">
+                    <button type="button" class="btn btn-outline-info ko btn-lg" data-toggle="modal" data-target="#myModal" href=""><div class="ko" style="font-size:25px">주간</div></button>
+                    <button type="button" class="btn btn-outline-info en btn-lg" data-toggle="modal" data-target="#myModal" href=""><div class="en" style="font-size:25px">&nbspDay&nbsp</div></button>
+                    <button type="button" class="btn btn-outline-primary ko btn-lg" data-toggle="modal" data-target="#myModal3" href=""><div class="ko" style="font-size:25px">공연</div></button>
+                    <button type="button" class="btn btn-outline-primary en btn-lg" data-toggle="modal" data-target="#myModal3" href=""><div class="en" style="font-size:25px">Show</div></button>
+                    <button type="button" class="btn btn-outline-info ko btn-lg" data-toggle="modal" data-target="#myModal2" href=""><div class="ko" style="font-size:25px">야간</div></button>
+                    <button type="button" class="btn btn-outline-info en btn-lg" data-toggle="modal" data-target="#myModal2" href=""><div class="en" style="font-size:25px">Night</div></button>
+                </div>
+                
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog modal-lg">
+                
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title ko btn-lg">주간 부스</h4>
+                        <h4 class="modal-title en btn-lg">Day Booth</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="inside_popup">
+                          <div class="p_list">
+                            <img class="ko btn-lg booth_img col-lg-4 col-md-4 col-sm-12" src="<%=image_path("team2/day_time_ko.png")%>">
+                            <img class="en btn-lg booth_img col-lg-4 col-md-4 col-sm-12" src="<%=image_path("team2/day_time_en.png")%>">
+                            <img class="A col-lg-3 col-md-3 col-sm-12" src="<%=image_path("team2/day_A.png")%>">
+                            <img class="B col-lg-3 col-md-3 col-sm-12" src="<%=image_path("team2/day_B.png")%>">
+                          </div>
+                          <button type="button" class="close" data-dismiss="modal" style="font-size:50px">&times;</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="myModal2" class="modal fade" role="dialog">
+                  <div class="modal-dialog modal-lg">
+                
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+<!--                        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                        <h4 class="modal-title ko btn-lg">야간 부스</h4>
+                        <h4 class="modal-title en btn-lg">Night Booth</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="inside_popup">
+                          <div class="p_list">
+                            <img src="<%=image_path("team2/night_time_ko.png")%>" class="ko btn-lg booth_img col-lg-3 col-md-3 col-sm-12">
+                            <img src="<%=image_path("team2/night_time_en.png")%>" class="en btn-lg booth_img col-lg-3 col-md-3 col-sm-12">
+                            <img src="<%=image_path("team2/night_A.png")%>" class="A col-lg-3 col-md-3 col-sm-12">
+                            <img src="<%=image_path("team2/night_B.png")%>" class="B col-lg-3 col-md-3 col-sm-12">
+                            <img src="<%=image_path("team2/night_BAB.png")%>" class="BAB col-lg-3 col-md-3 col-sm-12">
+                          </div>
+                          <button type="button" class="close" data-dismiss="modal"style="font-size:50px">&times;</button>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                </div>
+                
+                <div id="myModal3" class="modal fade" role="dialog">
+                  <div class="modal-dialog modal-lg">
+                
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+<!--                        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                        <h4 class="modal-title ko btn-lg">공연 순서</h4>
+                        <h4 class="modal-title en btn-lg">Show</h4>                        
+                      </div>
+                      <div class="modal-body">
+                        <div class="inside_popup">
+                          <div class="p_list2">
+                            <img class="San" src="<%=image_path("team2/SanE.jpg")%>">
+                            <img class="schedule" src="<%=image_path("team2/schedule.png")%>">
+                          </div>
+                          <button type="button" class="close" data-dismiss="modal"style="font-size:50px">&times;</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <dialog id="window2" title="밤이야" style="margin:0 auto; width:100%;">
+                </dialog>
+                <div class="timer justify-content-center">
+                    <p id="demo" class="ko"></p><!-- 카운트다운입니다 -->
+                    <p id="demo2" class="en"></p><!-- 카운트다운입니다 -->
+                </div>
+            </div>
+        </div>
+       
+        
+        <!-- 넘어가기 -->
+        <!--<div class="row_box">-->
+        <!--    <div class="about">-->
+        <!--        <img class="about_img" src="https://media.timeout.com/images/101887547/image.jpg">-->
+        <!--    </div>-->
+        <!--    <div class="booth">-->
+        <!--        <img class="booth_img" src="https://media.timeout.com/images/101887547/image.jpg">-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!-- footer -->
+    <footer style="background-color:#f2f2f2">
+      <div class="spon_par">
+        <div class="spon_pic" style="width:100%; height:55px">
+            <a href="http://www.unist.ac.kr"><img class="unist" src="<%=image_path("team2/unist.png")%>" style="height:30px; width:auto; margin-top:10px"></a>
+            <a href="https://www.facebook.com/likelion.UNIST/"><img class="likelion" src="<%=image_path("team2/likelion.png")%>"  style="height:50px; width:auto; margin-top:0"></a>
+            <a href="https://www.facebook.com/UNISTusc/"><div class="chong_cov"><img class="chonghak" src="<%=image_path("team2/chonghak.png")%>" style="height:50px; width:100px"></div></a>
+           
+        </div>
+        <div class="rights">Copyrightⓒ TEAM2 co.,ltd. All rights reserved.</div>
+      </div>
+    </footer>
+    </body>
 </html>
-

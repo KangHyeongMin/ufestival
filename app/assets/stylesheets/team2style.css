@@ -1,0 +1,254 @@
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+*
+{
+    margin:0;
+    font-family: 'hanna', serif;
+}
+div .btn-outline-info
+{
+    color:#3a95c9;
+    border-color:#3a95c9;
+}
+div .btn-outline-info:hover
+{
+    background-color:#3a95c9;
+}
+@font-face
+{
+    font-family: BMDOHYEON_otf;
+    font-family: BMDOHYEON_ttf;
+    
+    src: url(/assets/BMDOHYEON_ttf.ttf);
+    src: url(/assets/BMDOHYEON_otf.otf);
+}
+.background{
+    height:100vh;
+    /*background-image: url(/festival_back.jpeg);*/
+    background-size: cover;
+}
+.main_con
+{
+    height:35vh;
+    width:100%;
+    background-color:rgba(195, 203, 216, 0.7);
+}
+.young
+{
+    display:flex;
+    align-items:center;
+    font-size:1.0em;
+    text-align:center;
+    line-height:100%;
+}
+.row_box
+{
+    margin-top:3%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content : space-around;
+}
+/*#perform*/
+/*{*/
+/*    color:#C6FF00;*/
+/*    border-color:#C6FF00;*/
+/*}*/
+.about , .booth 
+{
+    height:30%;
+    width:30%;
+}
+
+.about>img, .booth>img
+{
+    height:100%;
+    width:100%;
+}
+.footer
+{
+    height:10%;
+    background-color:#0009;
+}
+.spon_pic
+{
+    height:160px;
+}
+.unist, .chonghak, .likelion
+{
+    width:60px;
+    background-size:cover;
+    height:60px;
+}
+.spon_par
+{
+    height:15%;
+    width:50%;
+    text-align:center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction : column;
+    justify-content: space-around;
+}
+
+.spon_pic
+{
+    text-align:center;
+    font-size:12px;
+}
+
+.spon_pic
+{
+    height:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.rights
+{
+    font-size:10px;
+}
+.young 
+{
+    font-size : 50px;
+}
+@media screen and (max-width: 769px) /*미디어쿼리*/
+{
+.young 
+{
+    font-size : 30px;
+}
+#demo, #demo2 
+{ 
+    font-size:15px;
+}
+}
+
+/* 팝업 */
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/** 한영 변환 코드입니다. 지우지마세요! **/
+.btn.en{
+    display: inline;
+    display: none;
+}
+
+
+.window{
+    height:100vh;
+}
+
+.window>h3{
+    text-align:center;
+}
+
+.closing{
+    margin:0 auto;
+    width:30%;
+}
+
+.closing2{
+    margin:0 auto;
+    width:30%;
+}
+
+.inside_popup{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p_list2{
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.San, .schedule{
+    width:100%;
+    height:auto;
+}
+
+@media only screen and (max-width: 500px) {
+    .modal_content{
+        width:300px;
+    }
+    .p_list{
+        margin:0 auto;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .booth_img{
+        margin:10 10;
+        width:70%;
+    }
+    
+    .A,.B{
+        margin:10 10;
+        width:80%;
+    }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 500px) {
+
+    .p_list{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+    }
+    .booth_img{
+        width:40%;
+        height:70vh;
+    }
+    
+    .A,.B, .BAB{
+        width:40%;
+        height:70vh;
+    }
+    body .modal-dialog {
+    /* new custom width */
+    max-width: 1000px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+}
+    
+}
+
+.chong_cov{
+    width:100px;
+    height:50px;
+}
+
+.mynav{
+    justify-content:space-between;
+    background-color:#f2f2f2;
+}
+
+.mynav2{
+    justify-content:flex-end;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+.modal-content {
+    
+    width: 100% ;
+}
