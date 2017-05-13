@@ -1,16 +1,528 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>4팀</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang = "en">
+  <head>
+    <!--<link rel="stylesheet" type="text/css" href="stylesheet.css">-->
+    
+    <meta charset="utf-8">
+    
+    <!-- Fix for iOS Safari zooming bug -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+    <!-- Javasctipt -->
+    <!--<script src="jquery-3.2.0.js"></script>-->
+    <%= javascript_include_tag "jquery-3.2.0.js" %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!--<script type="text/javascript" src="javascript.js"></script>-->
+    <%= stylesheet_link_tag "team4style.css" %>
+    <%= javascript_include_tag "team4js.js" %>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <h1>Home#team4</h1>
-  <p>this is U-festival test page</p>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+    <script type = "text/javascript">
+    $('document').ready(function(){
+        $(".navbutton").mouseover(function(){
+        	$(this).css('opacity', '0.7');
+        });
+        $(".navbutton").mouseleave(function(){
+        	$(this).css('opacity', '1');
+        });
+    });
+    </script>
+
+  </head>
+    
+  <body>
+    
+    <header class = "home Homebutton" style="background-image: url('<%=image_path("team4/flower.jpg")%>');"> 
+      <p class="spring"> Spring  Festival</p>
+    </header>
+    <div class = "Daynight">
+      <section class = "Day JsDay">
+        <div class="dayab JsDay" style="background-image: url('<%=image_path("team4/Day.jpg")%>');"></div>
+        <div class="DayNightLogo">
+          <div class = "Dayimage Daymain" style="background-image: url('<%=image_path("team4/df.png")%>');"> </div>    
+        </div>
+        
+        <div class="Daydata">
+          <nav class="navbar">
+            <ul>
+              <li class="button_DM navbutton">Map</li>
+              <li class="button_DB navbutton">BoothInfo</li>
+              <li class="button_DL navbutton">LineUp</li>
+            </ul>
+          </nav>
+          
+          <div class="afterNav">
+          
+          <p class ="daymap"><img src="<%=image_path("team4/daymap.png")%>"></p>
+        
+          <div class = "Dsizing">
+            <table class="table table-sm table-danger">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>Menu</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>이종민부석진부스</td>
+                  <td>닭꼬지,빙수</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>비비임집</td>
+                  <td>목살비빔면</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>분식충</td>
+                  <td>피카츄,떡꼬지 등</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>산내음</td>
+                  <td>솜사탕,달고나</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>연어</td>
+                  <td>생 연어회 모둠,연어초밥,꿀맥</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>별별문방구</td>
+                  <td>빙수,화채 등</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>손금+사주</td>
+                  <td>손금,사주</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>완식당</td>
+                  <td>주먹밥,차카니,꾀돌이 등</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>귀여운게 최고야</td>
+                  <td>플리마켓</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Elite of Elites</td>
+                  <td>사격,빙수</td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>피노오락실</td>
+                  <td>인형뽑기,오락기계</td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>ENTER 분식점</td>
+                  <td>솜사탕,마시멜로우,음료</td>
+                </tr>
+                <tr>
+                  <th scope="row">13</th>
+                  <td>다이제 분식</td>
+                  <td>떡꼬치,닭꼬치,콜팝</td>
+                </tr>
+                <tr>
+                  <th scope="row">14</th>
+                  <td>찰디찬 아이스크림</td>
+                  <td>구슬아이스크림</td>
+                </tr>
+                <tr>
+                  <th scope="row">15</th>
+                  <td>뷰티버스킹</td>
+                  <td>헤어스타일링,메이크업</td>
+                </tr>
+                <tr>
+                  <th scope="row">16</th>
+                  <td>UNIST RCY</td>
+                  <td>빙수,피카츄,핫도그</td>
+                </tr>
+                <tr>
+                  <th scope="row">17</th>
+                  <td>준토네 문방구</td>
+                  <td>추억의 간식,야광봉,음료</td>
+                </tr>
+                 <tr>
+                  <th scope="row">18</th>
+                  <td>ESCbar</td>
+                  <td>칵테일</td>
+                </tr>
+                 <tr>
+                  <th scope="row">19</th>
+                  <td>훈식당</td>
+                  <td>스무디,컵냉면,음료</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>축준위부스</td>
+                  <td>교복대여,포토부스</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>외부업체</td>
+                  <td>살수대첩,축준위를 이겨라</td>
+                </tr>
+                <tr>
+                  <th scope="row">BAB 110</th>
+                  <td>피의 DHE</td>
+                </tr>
+                <tr>
+                  <th scope="row">BAB 로비</th>
+                  <td>GRAPHOS 전시회</td>
+                </tr>
+                <tr>
+                  <th scope="row">BAB 109</th>
+                  <td>수담</td>
+                </tr>
+                <tr>
+                  <th scope="row">BAB 102</th>
+                  <td>조커</td>
+                </tr>
+                <tr>
+                  <th scope="row">BAB 108</th>
+                  <td>헥사 이거 실화냐</td>
+                </tr>
+                <tr>
+                  <th scope="row">BAB 111,112</th>
+                  <td>추억의 볼거리</td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="d_lineup">
+            <div class="lineup image"> <img src="<%=image_path("team4/lineup.png")%>"> </div>
+            <div class = "mainstage">
+            </div>
+            <div class="card-group">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Dark Chocolate</h4>
+                  <!--<p class="card-text">lovely guitar engineer</p>-->
+                  <p class="card-text"><small class="text-muted">11:00am ~ 11:20am</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title" style="font-family:toy">안순형</h4>
+                  <!--<p class="card-text">Violin, Cello, Viola classical boys</p>-->
+                  <p class="card-text"><small class="text-muted">11:20am ~ 11:40am</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title" style="font-family:toy">달달구링</h4>
+                  <!--<p class="card-text">lovely band</p>-->
+                  <p class="card-text"><small class="text-muted">11:40am ~ 12:00pm</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title" style="font-family:toy">여름열음</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">12:00pm ~ 12:20pm</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Unplugged</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">12:20pm ~ 12:45pm</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Melting Point</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">12:45pm ~ 01:10pm</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title" style="font-family:toy">박냥이</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">01:40pm ~ 02:00pm</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title" style="font-family:toy">풍차</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">02:00pm ~ 02:20pm</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title" style="font-family:toy">휴학래퍼</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">02:20pm ~ 02:40pm</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">U-turn</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">02:40pm ~ 03:00pm</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title" style="font-family:toy">오리에 계란추가</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">03:00pm ~ 03:20pm</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">White Chocolate</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">03:20pm ~ 03:40pm</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Joker</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">03:40pm ~ 04:00pm</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Peak</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">04:00pm ~ 04:20pm</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">ESC</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">04:20pm ~ 04:40pm</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Crescendo</h4>
+                  <!--<p class="card-text">cappella</p>-->
+                  <p class="card-text"><small class="text-muted">04:40pm ~ 05:00pm</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+        </div>  
+      </section>
+      
+      <section class = "Night JsNight">
+        <div class="nightab JsNight" style="background-image: url('<%=image_path("team4/Night.jpg")%>');"> </div>
+        <div class="DayNightLogo">
+          <div class = "Nightimage Nightmain" style="background-image: url('<%=image_path("team4/nf.png")%>');"> </div>
+        </div>
+        
+        <div class="Nightdata">
+          <nav class="navbar">
+            <ul>
+              <li class="button_NM navbutton">Map</li>
+              <li class="button_NB navbutton">BoothInfo</li>
+              <li class="button_NL navbutton">LineUp</li>
+            </ul>
+          </nav>
+          <p class ="nightmap"><img src="<%=image_path("team4/nightmap.png")%>"></p>
+          <div class = "Nsizing">
+          <table class="table table-sm table-inverse table_N">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Menu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                  <td>송실장의 목표를 포차캤다</td>
+                  <td>삼겹살 스시</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                  <td>전설의 복학생</td>
+                  <td>삼겹살 떡볶음, 전설주, 전설의 자몽</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                  <td>야간 자율학습</td>
+                  <td>메로나주, 탱크보이주, 스크류바주, 추억의간식, 나쵸 등</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                  <td>교무실</td>
+                  <td>순대야채볶음, 두루치밥, 감자전, 에이드</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                  <td>응답하라 단비</td>
+                  <td>불량식품</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                  <td>야자 째고 간 분식집</td>
+                  <td>모듬감자튀김, 소세지야채볶음, 보리차</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                  <td>마하</td>
+                  <td>염통, 닭꼬지, 황도사이다</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                  <td>양꼬</td>
+                  <td>허니버터&데리야끼 삼겹살 꼬치</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                  <td>7080포차</td>
+                  <td>문어빵, 마른안주</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                  <td>아낙네 꼬지집</td>
+                  <td>염통꼬치, 닭꼬치, 보리차</td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                  <td>초밥왕 vs 큐브왕</td>
+                  <td>큐브스테이크, 연어초밥</td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                  <td>ESC bar</td>
+                  <td>보리색 맛났어, 올때 메로나, 애플 봉봉 등</td>
+              </tr>
+              <tr>
+                <th scope="row">13</th>
+                  <td>스낵스트</td>
+                  <td>파르페</td>
+              </tr>
+              
+              
+              
+              
+              
+              </tbody>
+            </table>
+          </div>
+          <div class="n_lineup">
+          <div class="lineup image"> <img src="<%=image_path("team4/lineup.png")%>"> </div>
+          <div class = "SanE">
+                <p></p>
+                <h2>Main stage : SanE</h2>
+                <p class ="san"><img src="<%=image_path("team4/SanE.jpg")%>"></p>
+            </div>
+            
+          <div class="card-group">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">U-heung</h4>
+                <p class="card-text" style="font-family:toy">사물놀이</p>
+                <p class="card-text"><small class="text-muted">6:30pm</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Pitch High</h4></h4>
+                <p class="card-text"> A cappella</p>
+                <p class="card-text"><small class="text-muted">6:50pm</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Melting point</h4>
+                <p class="card-text">Rock band</p>
+                <p class="card-text"><small class="text-muted">7:20pm</small></p>
+              </div>
+            </div>
+          </div>
+          <div class = "card-group">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Unplugged</h4>
+                <p class="card-text">Acoustic band</p>
+                <p class="card-text"><small class="text-muted">7:55pm</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Crescendo</h4>
+                <p class="card-text">Acoustic band</p>
+                <p class="card-text"><small class="text-muted">8:27pm</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">EpideMIC</h4>
+                <p class="card-text">Black music</p>
+                <p class="card-text"><small class="text-muted">8:55pm</small></p>
+              </div>
+            </div>
+          </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Main Stage</h4>
+                <p class="card-text">SanE</p>
+                <p class="card-text"><small class="text-muted">9:30pm</small></p>
+              </div>
+            </div>
+          <div class = "card-group">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">ESC</h4>
+                <p class="card-text">Electronic Sensational Club</p>
+                <p class="card-text"><small class="text-muted">10:35pm</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">U-Turn</h4>
+                <p class="card-text">Turn your soul</p>
+                <p class="card-text"><small class="text-muted">11:00pm</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">UNICH</h4>
+                <p class="card-text">cheeriding club</p>
+                <p class="card-text"><small class="text-muted">11:25pm</small></p>
+              </div>
+            </div>
+           </div>
+        </div>
+        </div>
+        </div>
+        
+       
+      </section>
+  </body>
   
-</body>
 </html>
-

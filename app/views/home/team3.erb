@@ -1,16 +1,1114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    
+<!--태진-->
+    <script
+             src="https://code.jquery.com/jquery-3.2.1.js"
+             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+             crossorigin="anonymous">
+    </script>
+    <!--주간 야간~맨 위-->
+     <script type="text/javascript">
+            $(document).ready(function() {
+              $('.upward').click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#whatthe").offset().top
+                    }, 1000);
+              });
+            });
+    </script>
+    
+    <!--청춘이야 상단바 이동-->
+    <script type="text/javascript">
+            $(document).ready(function() {
+              $('.movinmorning').click(function() {
+                $('html, body').animate({
+                    scrollTop: $(".morning").offset().top
+                    }, 1000);
+              });
+            });
+    </script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+              $('#mornging-icon').click(function() {
+                $('html, body').animate({
+                    scrollTop: $(".morning").offset().top
+                    }, 1000);
+              });
+            });
+    </script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+              $('.movingnight').click(function() {
+                $('html, body').animate({
+                    scrollTop: $(".night").offset().top
+                    }, 1000);
+              });
+            });
+    </script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+              $('#night-icon').click(function() {
+                $('html, body').animate({
+                    scrollTop: $(".night").offset().top
+                    }, 1000);
+              });
+            });
+    </script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+              $('.movingconcert').click(function() {
+                $('html, body').animate({
+                    scrollTop: $(".concert_timetable").offset().top
+                    }, 1000);
+              });
+            });
+    </script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+              $('#concert-icon').click(function() {
+                $('html, body').animate({
+                    scrollTop: $(".concert_timetable").offset().top
+                    }, 1000);
+              });
+            });
+    </script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+              $('.movingbusking').click(function() {
+                $('html, body').animate({
+                    scrollTop: $(".busking_timetable").offset().top
+                    }, 1000);
+              });
+            });
+    </script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+              $('#busking-icon').click(function() {
+                $('html, body').animate({
+                    scrollTop: $(".busking_timetable").offset().top
+                    }, 1000);
+              });
+            });
+    </script>
+    <!--산이 이미지 관련-->
+    <script type="text/javascript">
+            $(document).ready(function() {
+               $(".button_ad").click(function() {
+                  $("#San_E_ad").css("display","none");
+               }); 
+                
+                
+               $(".San_E_class").click(function() {
+                   $(".San_E").css("display","inline");
+                   $(".button p").css("display","inline");
+               }); 
+               $("button").click(function() {
+                   $(".San_E").css("display","none");
+               });
+               
+               $("#do_not_show_again")
+            });
+    </script> 
+    
+    
+    
+    
+<!--태진-->
+
 <head>
-  <title>3팀</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  
+    <!--태진-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="<script class="js"></script>"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+          $( function() {
+            $( ".accordion" ).accordion();
+          } );
+        </script>
+     <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--<link rel="stylesheet" type="text/css" href="stylesheet.css">-->
+      <%= stylesheet_link_tag "team1style.css" %>
+      <link rel="stylesheet" type="text/css" href="/font-awesome-4.7.0/css/font-awesome.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--태진-->
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>2017 U-Festival</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Accordion - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#accordion" ).accordion();
+    } );
+    </script>
 </head>
+
 <body>
 
-  <h1>Home#team3</h1>
-  <p>this is U-festival test page</p>
+     <!--Navigation -->
   
-</body>
-</html>
+    <nav class="navbarfont navbar navbar-inverse navbar-fixed-top fill-navigation px-0 md-nav-cut" role="navigation" style="background-image:url('/img/navbarimg.png');">
+          <div class="container mx-0 mx-sm-auto px-0 col-12 w-100">
+               <!--Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header container px-0 mx-0 col-12 w-100">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="background-color: black;">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand mx-2" href="#" style="color: black;">청춘이야!</a>
+              </div>
+               <!--Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse md-display-none" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav d-flex flex-row justify-content-center md-display-none">
+                      <li>
+                          <a class="movinmorning" href="#" style="color: black;">주간 부스</a>
+                      </li>
+                      <li>
+                          <a class="movingbusking" href="#" style="color: black;">주간 버스킹</a>
+                      </li>
+                      <li>
+                          <a class="movingnight"href="#" style="color: black;">야간 부스</a>
+                      </li>
+                      <li>
+                          <a class="movingconcert"href="#" style="color: black;">야간 공연</a>
+                      </li>
+                  </ul>
+              </div>
+               <!--/.navbar-collapse -->
+          </div>
+           <!--/.container -->
+      </nav>
 
+    
+  
+
+    <div class="container scroll-link px-0 mx-0 md-display-none" id="whatthe" style="width: 100%; margin-bottom: 0.5vh; margin-top: 5.5vh">
+      <div class="item d-flex">
+        <div class="item-scroll-link mx-0 px-0" style="width:50%;" >
+          <div class="fill d-flex justify-content-center align-items-end" id="busking-icon" style="background-image:url('/img/microphone.png'); background-size: auto 100%; background-repeat: no-repeat; background-color: #7cd5ff">
+            <div class="info-guide d-flex align-items-center justify-content-center" style="background-color: #0275d8;">주간 버스킹 일정</div>
+          </div>
+        </div>
+        <div class="item-scroll-link mx-0 px-0" style="border: 4px solid DarkOrenge; width:50%;">
+          <div class="fill d-flex justify-content-center align-items-end" id="mornging-icon" style="background-image:url('/img/booth.png'); background-size: auto 100%; background-repeat: no-repeat; background-color: #7cd5ff">
+            <div class="info-guide d-flex align-items-center justify-content-center" style="background-color: #0275d8;">주간 부스 정보</div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--Half Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide md-display-none">
+         <!--Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+         <!--Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                 <!--Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('/img/공연2.png');"></div>
+                <div class="carousel-caption">
+                    <h2>연예인 초청 무대</h2>
+                </div>
+            </div>
+            <div class="item">
+                 <!--Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('/img/주간부스.png');"></div>
+                <div class="carousel-caption">
+                    <h2>주간부스</h2>
+                </div>
+            </div>
+            <div class="item">
+                 <!--Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('/img/공연5.png');"></div>
+                <div class="carousel-caption">
+                    <h2>동아리 공연</h2>
+                </div>
+            </div>
+            <div class="item">
+                 <!--Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('/img/전야제.png');"></div>
+                <div class="carousel-caption">
+                    <h2>전야제</h2>
+                </div>
+            </div>
+            <div class="item">
+                 <!--Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('/img/주간이벤트.png');"></div>
+                <div class="carousel-caption">
+                    <h2>주간 이벤트</h2>
+                </div>
+            </div>
+        </div>
+
+         <!--Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+    <div class="container px-0 mx-0 md-display-none" style="height: 20vh; width: 100%; margin-top: 0.5vh;">
+      <div class="item d-flex">
+        <div class="item-scroll-link mx-0 px-0" style="width:50%;" >
+          <div class="fill d-flex justify-content-center align-items-end" id="concert-icon" style="background-image:url('/img/concert.png'); background-size: auto 100%; background-repeat: no-repeat; background-color: #1e3760">
+            <div class="info-guide d-flex align-items-center justify-content-center" style="background-color: black;">야간 공연 일정</div>
+          </div>
+        </div>
+        <div class="item-scroll-link mx-0 px-0" style="border: 4px solid DarkOrenge; width:50%;">
+          <div class="fill d-flex justify-content-center align-items-end" id="night-icon" style="background-image:url('/img/beer.png'); background-size: auto 100%; background-repeat: no-repeat; background-color: #1e3760">
+            <div class="info-guide d-flex align-items-center justify-content-center" style="background-color: black;">야간 부스 정보</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
+    
+
+    
+    
+
+    
+    
+    
+   
+     <!--/.container -->
+    
+    
+
+     <!--jQuery -->
+    <!--<script src="js/jquery.js"></script>-->
+
+     <!--Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+     <!--Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+    
+    <!--Script for flip card-->
+    <!--<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>-->
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    
+    <script>
+        $(".flip-card").flip({axis: 'x'});
+    </script>
+    
+    
+    <!--<script src="//code.jquery.com/jquery.min.js"></script>-->
+    
+   
+    
+    <!--태진+대성(미디어 쿼리)-->
+    <!--나래바보-->
+    <div class="container md-display-none px-0 mx-0" style="width: 100%;">
+      <div class="container morning px-0 mx-0" style="margin-top: 5vh; width: 100%;">
+        <div class="badge badge-default" style="margin-top: 1vh; background-color: #fff8dc; text-align: center; width: 100%; font-size: 150%;  color: black;">
+          주간부스(10:00~17:00)
+        </div>
+        <div class="row py-5 w-100" style="margin-left: 0;">
+          <div class="offset-sm-4 col-sm-4">
+            <h2 class="boothtitle"><img class="sun" src="https://image.flaticon.com/icons/svg/146/146199.svg"/></h2>
+          </div>
+        </div>
+      
+        <div class="row w-100">
+            <div class="col-sm-12 md-3 helloitsme">
+              <div class="accordion">
+                
+                <h3> 축준위 부스 </h3>
+                <div class="card">
+                  <img class="card-img-top" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> 교복 대여 / 포토 부스 </h4>
+                    <p class="card-text"> (교복대여)학창시절의 느낌을 물씬 느끼게 해주는 이쁜 교복을 대여해 주는부스 사진은 덤! </p>
+                    <p class="card-text"> (포토부스)즉석에서 촬영부터 인화까지! 남는 건 사진밖에 없다 하잖아요? 축제를 추억할 수 있도록 당신의 사진을 찍어드립니다! 재미있는 단체사진 미션을 수행하고 경품도 받아가세요! </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">(교복대여) 학생회비 납부자 : 2000원 / 학생회비 비납부자 : 4000원</li>
+                    <li class="list-group-item">(포토부스) 학생회비 납부자 : 4장에 500원 / 학생회비 미납부자 : 4장에 1000원</li>
+                  </ul>
+                  <div class="card-block d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                    <p class="likenumber"> 123 </p>
+                  </div>
+                </div>
+               
+                <h3> 축준위 부스 2  </h3>
+                <div class="card">
+                  <img class="card-img-top" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">(살수대첩/ 축준위를 이겨라)</h4>
+                    <p class="card-text"> (살수대첩) 세명이 힘을 합쳐 풀장 안의 물을 모두 퍼내라! 쏟아지는 물 속에 더위를 날려버리세요~ 
+              무료 진행  사전 팀 별 신청 이후 진행
+                    </p>
+                    <p class="card-text">(축제 준비위원회를 이겨라!) 추첨으로 뽑은 대결로 이기면 다양한 경품이?? 게임도 하고, 경품도 받아가는 일석이조 개 이득!!? / 무료진행</p>
+                  </div>
+                  <div class="card-block d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                    <p class="likenumber"> 123 </p>
+                  </div>
+                </div>
+                
+                <h3> 뷰티버스킹 </h3>
+                <div class="card">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> 위치1 </h4>
+                    <p class="card-text"> 헤어스타일링, 수정메이크업, 풀메이크업
+                   </p>
+                  </div>
+                  <div class="card-block d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                    <p class="likenumber"> 123 </p>
+                  </div>
+                </div>
+                
+                <h3> 손금+사주 </h3>
+                <div class="card">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> 위치2 </h4>
+                    <p class="card-text">  </p>
+                  </div>
+                  <div class="card-block d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                    <p class="likenumber"> 123 </p>
+                  </div>
+                </div>
+                
+                <h3> 비비임집 </h3>
+                <div class="card">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> 위치3 </h4>
+                    <p class="card-text"> 목살비빔면 </p>
+                  </div>
+                  <div class="card-block d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                    <p class="likenumber"> 123 </p>
+                  </div>
+                </div>
+             
+                <h3> 인액기스 </h3>
+                <div class="card">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> 위치4 </h4>
+                    <p class="card-text"> 프로젝트 '화사'의 토피어리 제품 </p>
+                  </div>
+                  <div class="card-block d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                    <p class="likenumber"> 123 </p>
+                  </div>
+                </div>
+             
+              </div>
+              <div class="upward d-flex justify-content-center md-display-none"> <button type="button" class="btn btn-link "><i class="fa fa-angle-up gotopbutton" aria-hidden="true"></i></button>
+                    
+              </div>
+            </div>
+          </div>
+        </div>  
+        
+        <div class="container busking_timetable mx-0" style="width: 100%;">
+          <div class="badge badge-default" style="margin-top: 1vh; background-color: #fff8dc; text-align: center; width: 100%; font-size: 150%;  color: black;">
+              주간 버스킹(11:00~17:00)
+          </div>
+          <div class="concert_icon">
+            <img src="<%=image_path("team3/img/acoustic-guitar.png")%>">
+          </div>
+          <div class="table-responsive" style="margin-bottom: 0;">
+            <table class="table table-hover" style="margin-bottom: 0;">
+              <thead>
+                <tr>
+                  <th class="time busking_th" style="width: 20%; text-align: center;">Time</th>
+                  <th class="name busking_th" style="width: 80%; text-align: center;">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="time">11:00<br>11:20</td>
+                  <td class="name">Dark Chocolate</td>
+                </tr>
+                <tr>
+                  <td class="time">11:20<br>11:40</td>
+                  <td class="name">안순형</td>
+                </tr>
+                <tr>
+                  <td class="time">11:40<br>12:00</td>
+                  <td class="name">달달구링</td>
+                </tr>
+                <tr>
+                  <td class="time">12:00<br>12:20</td>
+                  <td class="name">얼음여름</td>
+                </tr>
+                <tr>
+                  <td class="time">12:20<br>12:25</td>
+                  <td class="name">Unplugged</td>
+                </tr>
+                <tr>
+                  <td class="time">12:45<br>13:10</td>
+                  <td class="name">Melting Point</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>   
+          <div class="blank">
+            <div style="font-weight: bold;">점심시간</div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <td class="time">13:40<br>14:00</td>
+                  <td class="name">박냥이</td>
+                </tr>
+                <tr>
+                  <td class="time">14:00<br>14:20</td>
+                  <td class="name">풍차</td>
+                </tr>
+                <tr>
+                  <td class="time">14:20<br>14:40</td>
+                  <td class="name">휴학래퍼</td>
+                </tr>
+                <tr>
+                  <td class="time">14:40<br>15:00</td>
+                  <td class="name">U-Turn</td>
+                </tr>
+                <tr>
+                  <td class="time">15:00<br>15:20</td>
+                  <td class="name">오리에 계란추가</td>
+                </tr>
+                <tr>
+                  <td class="time">15:20<br>15:40</td>
+                  <td class="name">White Chocolate</td>
+                </tr>
+                <tr>
+                  <td class="time">15:40<br>16:00</td>
+                  <td class="name">조커</td>
+                </tr>
+                <tr>
+                  <td class="time">16:00<br>16:20</td>
+                  <td class="name">Peak</td>
+                </tr>
+                <tr>
+                  <td class="time">16:20<br>16:40</td>
+                  <td class="name">Electronic Sensational Club</td>
+                </tr>
+                <tr>
+                  <td class="time">16:40<br>17:00</td>
+                  <td class="name">Crescendo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>  
+          <div class="upward d-flex justify-content-center " style="margin-bottom: 10px;"> 
+            <button type="button" class="btn btn-link ">
+              <i class="fa fa-angle-up gotopbutton" aria-hidden="true">
+              </i>
+            </button>
+          </div>
+        </div>
+        
+    <!--나래바보-->
+        <div class="container night mx-0" style="width: 100%;">
+            <div class="badge badge-default" style="margin-top: 1vh; background-color: #fff8dc; text-align: center; width: 100%; font-size: 150%;  color: black;">
+              야간 부스(18:30~24:00)
+            </div>
+            <div class="row py-5">
+                <div class="col-sm-4 offset-sm-4">
+                    <h2 class="boothtitle"> <img class="sun" src="https://image.flaticon.com/icons/svg/149/149540.svg"/></h2>
+        
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 mb-3">
+                <div class="accordion">
+                  
+                  <h3> 송실장이 포차캤다  </h3>
+                  <div class="card">
+                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">  </h4>
+                      <p class="card-text"> 위치1  </p>
+                    </div>
+                    <div class="card-block d-flex justify-content-center">
+                      <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                      <p class="likenumber"> 123 </p>
+                    </div>
+                  </div>
+                  
+                  <h3> 전설의 복학생</h3>
+                  <div class="card">
+                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">  </h4>
+                      <p class="card-text"> 위치2  </p>
+                    </div>
+                    <div class="card-block d-flex justify-content-center">
+                      <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                      <p class="likenumber"> 123 </p>
+                    </div>
+                  </div>
+                  
+                  <h3> 야간 자율학습</h3>
+                  <div class="card">
+                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">  </h4>
+                      <p class="card-text"> 위치3  </p>
+                    </div>
+                    <div class="card-block d-flex justify-content-center">
+                      <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                      <p class="likenumber"> 123 </p>
+                    </div>
+                  </div>
+                
+                <h3> 교무실 </h3>
+                  <div class="card">
+                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">  </h4>
+                      <p class="card-text"> 위치4  </p>
+                    </div>
+                    <div class="card-block d-flex justify-content-center">
+                      <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                      <p class="likenumber"> 123 </p>
+                    </div>
+                  </div>
+                  
+                </div>
+                 <div class="upward d-flex justify-content-center "> <button type="button" class="btn btn-link "><i class="fa fa-angle-up gotopbutton" aria-hidden="true"></i></button>
+                      
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container concert_timetable mx-0" style="margin-top: 0; width: 100%;">
+            <div class="badge badge-default" style="margin-top: 1vh; background-color: #fff8dc; text-align: center; width: 100%; font-size: 150%;  color: black;">
+                야간 공연(18:30~24:00)
+            </div>
+            <div class="concert_icon">
+              <img src="<%=image_path("team3/img/heavy-metal.png")%>">
+            </div>
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th class="time" style="width: 20%; text-align: center;">Time</th>
+                    <th class="name" style="width: 80%; text-align: center;">Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time">18:30<br>18:45</td>
+                    <td class="name">유니스트에 흥을 알려라!</td>
+                  </tr>
+                  <tr>
+                    <td class="time">18:50<br>19:10</td>
+                    <td class="name">Pitch High</td>
+                  </tr>
+                  <tr>
+                    <td class="time">19:20<br>19:45</td>
+                    <td class="name">Melting Point</td>
+                  </tr>
+                  <tr>
+                    <td class="time">19:55<br>20:17</td>
+                    <td class="name">Unplugged</td>
+                  </tr>
+                  <tr>
+                    <td class="time">20:27<br>20:45</td>
+                    <td class="name">Crescendo</td>
+                  </tr>
+                  <tr>
+                    <td class="time">20:55<br>21:15</td>
+                    <td class="name">EpideMIC</td>
+                  </tr>
+                  <tr class="San_E_class">
+                    <td class="time">21:30<br>22:30</td>
+                    <td class="name" style="color: orange;">San E</td>
+                  </tr>
+                  <tr>
+                    <td class="time">22:35<br>22:55</td>
+                    <td class="name">Electronic Sensational Club</td>
+                  </tr>
+                  <tr>
+                    <td class="time">23:00<br>23:20</td>
+                    <td class="name">U-Turn</td>
+                  </tr>
+                  <tr>
+                    <td class="time">23:25<br>23:45</td>
+                    <td class="name">UNICH</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>  
+            <div class="upward d-flex justify-content-center " style="margin-bottom: 10px;"> 
+                <button type="button" class="btn btn-link ">
+                  <i class="fa fa-angle-up gotopbutton" aria-hidden="true">
+                  </i>
+                </button>
+            </div>
+          </div>
+        <div class="San_E">
+          <img class = "col-12"src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/18199151_808600575962818_1750025428811166782_n.jpg?oh=04fe0346aa05ba1534c9039c2696f83c&oe=597B180C" width="100" height="100" alt="blank">
+          <button class="button"><p>X</p></button>
+        </div>
+      </div>
+
+    
+    
+    <!--대성-->
+    <div class="door_font container md-banner md-display-block">
+      Welcome Festival!
+    <br>
+      5/19 ~ 5/20
+    </div>
+    <div class="container md-display-block px-0" style="width: 100%; height: 100%;">
+        <div class="container d-flex flex-row" style="width: 100%; height: 100%; top: -26vh">
+          <div class="d-flex flex-row" style="width: 50%; height: 100%; flex-wrap: wrap;">
+            <div style="width: 100%; height: 60%;">
+              <div class="fill" style="background-image:url('/img/공연2.png');"></div>
+            </div>
+            <div style="width: 50%; height: 40%;">
+              <div class="fill" style="background-image:url('/img/주간이벤트.png');"></div>
+            </div>
+            <div style="width: 50%; height: 40%;">
+              <div class="fill" style="background-image:url('/img/전야제.png');"></div>
+            </div>
+          </div>
+          <div class="d-flex flex-row" style="width: 50%; height: 100%; flex-wrap: wrap;">
+            <div style="width: 100%; height: 50%">
+              <div class="fill" style="background-image:url('/img/주간부스.png');"></div>
+            </div>
+            <div style="black; width: 100%; height: 50%">
+              <div class="fill" style="background-image:url('/img/공연5.png');"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container px-0 mx-0 md-display-block" style="width: 100%;">
+      <div  class="container d-flex flex-row px-0 mx-0" style="width: 100%; flex-wrap: wrap;">
+        <div class="container morning" style="margin-top: 5vh; width: 25%; margin-right: 0;">
+        <div class="badge badge-default" style="margin-top: 1vh; background-color: #fff8dc; text-align: center; width: 100%; font-size: 120%;  color: black;">
+          주간부스(10:00~17:00)
+        </div>
+        <div class="concert_icon">
+          <img src="https://image.flaticon.com/icons/svg/146/146199.svg">
+        </div>
+      
+      
+        <div class="row">
+            <div class="col-sm-12 mb-3">
+              <div class="accordion">
+                
+                <h3> 축준위 부스 </h3>
+                <div class="card">
+                  <img class="card-img-top" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> 교복 대여 / 포토 부스 </h4>
+                    <p class="card-text"> (교복대여)학창시절의 느낌을 물씬 느끼게 해주는 이쁜 교복을 대여해 주는부스 사진은 덤! </p>
+                    <p class="card-text"> (포토부스)즉석에서 촬영부터 인화까지! 남는 건 사진밖에 없다 하잖아요? 축제를 추억할 수 있도록 당신의 사진을 찍어드립니다! 재미있는 단체사진 미션을 수행하고 경품도 받아가세요! </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">(교복대여) 학생회비 납부자 : 2000원 / 학생회비 비납부자 : 4000원</li>
+                    <li class="list-group-item">(포토부스) 학생회비 납부자 : 4장에 500원 / 학생회비 미납부자 : 4장에 1000원</li>
+                  </ul>
+                  <div class="card-block d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                    <p class="likenumber"> 123 </p>
+                  </div>
+                </div>
+               
+                <h3> 축준위 부스 2  </h3>
+                <div class="card">
+                  <img class="card-img-top" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">(살수대첩/ 축준위를 이겨라)</h4>
+                    <p class="card-text"> (살수대첩) 세명이 힘을 합쳐 풀장 안의 물을 모두 퍼내라! 쏟아지는 물 속에 더위를 날려버리세요~ 
+              무료 진행  사전 팀 별 신청 이후 진행
+                    </p>
+                    <p class="card-text">(축제 준비위원회를 이겨라!) 추첨으로 뽑은 대결로 이기면 다양한 경품이?? 게임도 하고, 경품도 받아가는 일석이조 개 이득!!? / 무료진행</p>
+                  </div>
+                  <div class="card-block d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                    <p class="likenumber"> 123 </p>
+                  </div>
+                </div>
+                
+                <h3> 뷰티버스킹 </h3>
+                <div class="card">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> 위치1 </h4>
+                    <p class="card-text"> 헤어스타일링, 수정메이크업, 풀메이크업
+                   </p>
+                  </div>
+                  <div class="card-block d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                    <p class="likenumber"> 123 </p>
+                  </div>
+                </div>
+                
+                <h3> 손금+사주 </h3>
+                <div class="card">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> 위치2 </h4>
+                    <p class="card-text">  </p>
+                  </div>
+                  <div class="card-block d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                    <p class="likenumber"> 123 </p>
+                  </div>
+                </div>
+                
+                <h3> 비비임집 </h3>
+                <div class="card">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> 위치3 </h4>
+                    <p class="card-text"> 목살비빔면 </p>
+                  </div>
+                  <div class="card-block d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                    <p class="likenumber"> 123 </p>
+                  </div>
+                </div>
+             
+                <h3> 인액기스 </h3>
+                <div class="card">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> 위치4 </h4>
+                    <p class="card-text"> 프로젝트 '화사'의 토피어리 제품 </p>
+                  </div>
+                  <div class="card-block d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                    <p class="likenumber"> 123 </p>
+                  </div>
+                </div>
+             
+              </div>
+              <div class="upward d-flex justify-content-center "> <button type="button" class="btn btn-link "><i class="fa fa-angle-up gotopbutton" aria-hidden="true"></i></button>
+                    
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="container busking_timetable" style="margin-top: 5vh; width: 25%; margin-left: 0;">
+          <div class="badge badge-default" style="margin-top: 1vh; background-color: #fff8dc; text-align: center; width: 100%; font-size: 120%;  color: black;">
+              주간 버스킹(11:00~17:00)
+          </div>
+          <div class="concert_icon">
+            <img src="<%=image_path("team3/img/acoustic-guitar.png")%>">
+          </div>
+          <div class="table-responsive" style="margin-bottom: 0;">
+            <table class="table table-hover" style="margin-bottom: 0;">
+              <thead>
+                <tr>
+                  <th class="time busking_th" style="width: 20%; text-align: center;">Time</th>
+                  <th class="name busking_th" style="width: 80%; text-align: center;">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="time">11:00<br>11:20</td>
+                  <td class="name">Dark Chocolate</td>
+                </tr>
+                <tr>
+                  <td class="time">11:20<br>11:40</td>
+                  <td class="name">안순형</td>
+                </tr>
+                <tr>
+                  <td class="time">11:40<br>12:00</td>
+                  <td class="name">달달구링</td>
+                </tr>
+                <tr>
+                  <td class="time">12:00<br>12:20</td>
+                  <td class="name">얼음여름</td>
+                </tr>
+                <tr>
+                  <td class="time">12:20<br>12:25</td>
+                  <td class="name">Unplugged</td>
+                </tr>
+                <tr>
+                  <td class="time">12:45<br>13:10</td>
+                  <td class="name">Melting Point</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>   
+          <div class="blank">
+            <div style="font-weight: bold;">점심시간</div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <td class="time">13:40<br>14:00</td>
+                  <td class="name">박냥이</td>
+                </tr>
+                <tr>
+                  <td class="time">14:00<br>14:20</td>
+                  <td class="name">풍차</td>
+                </tr>
+                <tr>
+                  <td class="time">14:20<br>14:40</td>
+                  <td class="name">휴학래퍼</td>
+                </tr>
+                <tr>
+                  <td class="time">14:40<br>15:00</td>
+                  <td class="name">U-Turn</td>
+                </tr>
+                <tr>
+                  <td class="time">15:00<br>15:20</td>
+                  <td class="name">오리에 계란추가</td>
+                </tr>
+                <tr>
+                  <td class="time">15:20<br>15:40</td>
+                  <td class="name">White Chocolate</td>
+                </tr>
+                <tr>
+                  <td class="time">15:40<br>16:00</td>
+                  <td class="name">조커</td>
+                </tr>
+                <tr>
+                  <td class="time">16:00<br>16:20</td>
+                  <td class="name">Peak</td>
+                </tr>
+                <tr>
+                  <td class="time">16:20<br>16:40</td>
+                  <td class="name">Electronic Sensational Club</td>
+                </tr>
+                <tr>
+                  <td class="time">16:40<br>17:00</td>
+                  <td class="name">Crescendo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>  
+          <div class="upward d-flex justify-content-center " style="margin-bottom: 10px;"> 
+            <button type="button" class="btn btn-link ">
+              <i class="fa fa-angle-up gotopbutton" aria-hidden="true">
+              </i>
+            </button>
+          </div>
+        </div>    
+
+        <div class="container night mx-0" style="margin-top: 5vh; width: 25%;">
+            <div class="badge badge-default" style="margin-top: 1vh; background-color: #fff8dc; text-align: center; width: 100%; font-size: 120%;  color: black;">
+              야간 부스(18:30~24:00)
+            </div>
+            <div class="concert_icon">
+              <img src="https://image.flaticon.com/icons/svg/149/149540.svg">
+            </div>
+            
+            <div class="row">
+              <div class="col-sm-12 mb-3">
+                <div class="accordion">
+                  
+                  <h3> 송실장이 포차캤다  </h3>
+                  <div class="card">
+                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">  </h4>
+                      <p class="card-text"> 위치1  </p>
+                    </div>
+                    <div class="card-block d-flex justify-content-center">
+                      <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                      <p class="likenumber"> 123 </p>
+                    </div>
+                  </div>
+                  
+                  <h3> 전설의 복학생</h3>
+                  <div class="card">
+                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">  </h4>
+                      <p class="card-text"> 위치2  </p>
+                    </div>
+                    <div class="card-block d-flex justify-content-center">
+                      <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                      <p class="likenumber"> 123 </p>
+                    </div>
+                  </div>
+                  
+                  <h3> 야간 자율학습</h3>
+                  <div class="card">
+                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">  </h4>
+                      <p class="card-text"> 위치3  </p>
+                    </div>
+                    <div class="card-block d-flex justify-content-center">
+                      <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                      <p class="likenumber"> 123 </p>
+                    </div>
+                  </div>
+                
+                <h3> 교무실 </h3>
+                  <div class="card">
+                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">  </h4>
+                      <p class="card-text"> 위치4  </p>
+                    </div>
+                    <div class="card-block d-flex justify-content-center">
+                      <button type="button" class="btn btn-outline-warning"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                      <p class="likenumber"> 123 </p>
+                    </div>
+                  </div>
+                  
+                </div>
+                 <div class="upward d-flex justify-content-center "> <button type="button" class="btn btn-link "><i class="fa fa-angle-up gotopbutton" aria-hidden="true"></i></button>
+                      
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container concert_timetable mx-0" style="margin-top: 5vh; width: 25%;">
+            <div class="badge badge-default" style="margin-top: 1vh; background-color: #fff8dc; text-align: center; width: 100%; font-size: 120%;  color: black;">
+                야간 공연(18:30~24:00)
+            </div>
+            <div class="concert_icon">
+              <img src="<%=image_path("team3/img/heavy-metal.png")%>">
+            </div>
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th class="time" style="width: 20%; text-align: center;">Time</th>
+                    <th class="name" style="width: 80%; text-align: center;">Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time">18:30<br>18:45</td>
+                    <td class="name">유니스트에 흥을 알려라!</td>
+                  </tr>
+                  <tr>
+                    <td class="time">18:50<br>19:10</td>
+                    <td class="name">Pitch High</td>
+                  </tr>
+                  <tr>
+                    <td class="time">19:20<br>19:45</td>
+                    <td class="name">Melting Point</td>
+                  </tr>
+                  <tr>
+                    <td class="time">19:55<br>20:17</td>
+                    <td class="name">Unplugged</td>
+                  </tr>
+                  <tr>
+                    <td class="time">20:27<br>20:45</td>
+                    <td class="name">Crescendo</td>
+                  </tr>
+                  <tr>
+                    <td class="time">20:55<br>21:15</td>
+                    <td class="name">EpideMIC</td>
+                  </tr>
+                  <tr class="San_E_class">
+                    <td class="time">21:30<br>22:30</td>
+                    <td class="name" style="color: orange;">San E</td>
+                  </tr>
+                  <tr>
+                    <td class="time">22:35<br>22:55</td>
+                    <td class="name">Electronic Sensational Club</td>
+                  </tr>
+                  <tr>
+                    <td class="time">23:00<br>23:20</td>
+                    <td class="name">U-Turn</td>
+                  </tr>
+                  <tr>
+                    <td class="time">23:25<br>23:45</td>
+                    <td class="name">UNICH</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>  
+            <div class="upward d-flex justify-content-center " style="margin-bottom: 10px;"> 
+                <button type="button" class="btn btn-link ">
+                  <i class="fa fa-angle-up gotopbutton" aria-hidden="true">
+                  </i>
+                </button>
+            </div>
+          </div>
+          <div class="San_E">
+            <img class="px-0" src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/18199151_808600575962818_1750025428811166782_n.jpg?oh=04fe0346aa05ba1534c9039c2696f83c&oe=597B180C" alt="blank">
+            <button class="button"><p>X</p></button>
+          </div>
+        </div>
+    </div>
+    <!--대성-->
+      
+            
+            
+            
+        
+        <!--태진-->
+        
+        
+    
+    
+    
+     <!--Footer -->
+      <footer class="container d-flex justify-content-center px-0">
+          <div class="row footer-inner d-flex justify-content-center px-0 mx-0">
+              <div class="fill logos2 m-2" style="background-image:url('/img/총학로고.png')"></div>
+              <div class="fill logos2 m-2" style="background-image:url('/img/동연회 로고.jpg');"></div>
+              <div class="fill logos1 m-2" style="background-image:url('/img/인감 로고.jpg')"></div>
+              <div class="fill logos1 m-2" style="background-image:url('/img/멋사로고.png');"></div>
+              <div class="fill logos2 m-2" style="background-image:url('/img/유니스트 로고.png');"></div>
+          </div>
+           <!--/.row -->
+      </footer>
+
+</body>
+
+</html>

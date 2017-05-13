@@ -1,0 +1,355 @@
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+/*폰트 지정*/
+
+@font-face {/*현재 이 폰트가 먹히지 않음...*/
+    font-family: 'inkliquid'; 
+    src: url('fonts/thefaceshopinkliquid.woff') format('woff');
+}
+@font-face {
+    font-family: 'meccanicabold';
+    src: url('fonts/meccanica-bold-webfont.woff2') format('woff2'),
+         url('fonts/meccanica-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('fonts/BMDOHYEON_ttf.woff') format('woff');
+    
+    
+}
+
+.door_font {
+    font-family: meccanicabold, sans-serif;
+}
+
+.carousel-inner div h2 {
+    font-family: BMDOHYEON, sans-serif;
+}
+
+.navbarfont div div a {
+    font-family: inkliquid, 'Jeju Gothic';
+    font-size: 4rem;
+}
+
+.navbarfont div div li a {
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+ * { /** 폰트 영문 이름 지정 **/
+ font-family: 'Jeju Gothic', sans-serif;
+}
+
+.card-img-top{
+    height : 250px;
+}
+.boothtitle{
+    text-align : center;
+    font-weight: bolder;
+    color: white;
+    padding-top:20px;
+    padding-bottom : 20px;
+}
+.card-title{
+    text-align : center;
+}
+.accordion h3{ 
+  background:none;
+  color: white;
+  /*background-color:#37c657; */
+  border:none;
+  font-family: 'Jeju Gothic',  sans-serif;
+  
+  background: #45d164; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #45d164 , #63f283); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #45d164, #63f283); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #45d164, #63f283); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #45d164 , #63f283);
+}
+  
+  
+  
+  
+
+
+.ui-icon
+{   
+    background-image: url(https://code.jquery.com/ui/1.12.1/themes/base/images/ui-icons_ffffff_256x240.png) !important;
+}
+
+.ui-state-active{
+    font-weight: bold !important;
+}
+
+.likenumber{
+    
+    padding-top:15px;
+    padding-left:8px;
+    font-weight : bold;
+    color :#ea9515;
+}
+
+.sun{
+    width: 30%;
+    height: auto;
+}
+.morning{
+    background-color : #7cd5ff;
+}
+.night{
+    background-color : #1e3760;
+}
+/*.card-block{*/
+/*    height: 30px;*/
+/*}*/
+.btn-outline-warning{
+    height : 50px;
+}
+
+.gotopbutton{
+    color : white;
+    font-size : 30px !important;
+    border : 2px solid white;
+    width : 50px;
+    border-radius : 10px;
+    height : 50px;
+    padding-top : 5px;
+    background-color : transparent;
+}
+.gotop{
+
+}
+
+/*태수꺼*/
+
+p.time {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p.concert_name {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.concert_timetable .container {
+    background-color: #f2cdc7;
+}
+
+.name {
+    text-align: center;
+}
+
+.San_E img {
+    max-width: 450px;
+    height: auto;
+    margin-top: 8vh;
+    margin-bottom: 6vh;
+}
+
+/*#concert_timetable_id {*/
+/*    display: none;*/
+/*}*/
+
+div.San_E{
+    position: fixed;
+    top:20vh;
+    width: 100%;
+    background-color: rgba(39,40,34,0.3);
+    z-index: 10000;
+    display: none;
+    border-style: round;
+    
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+#San_E_ad{
+    position: fixed;
+    width: 60%;    
+    top: 10%;
+    left: 20%;
+    background-color: white;
+}
+
+#San_E_ad img {
+    width: 100%;
+}
+
+/*#do_not_show_again {*/
+/*    background-color: #dadada;*/
+/*    color: black;*/
+/*    font-weight: bold;*/
+/*    font-size: 0.8rem;*/
+/*    text-align:right;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    width: 100%;*/
+/*}*/
+
+/*#do_not_show_again div {*/
+/*    border-style: solid;*/
+/*    border-width: 2px;*/
+/*    border-color: #acacac;    */
+/*    background-color: #dadada;*/
+/*    display: inline;*/
+/*    padding-right: 3px;*/
+/*    padding-left: 3px;*/
+
+/*}*/
+
+/*#do_not_show_again p {*/
+/*    display: inline;*/
+/*}*/
+
+.San_E_class {
+    color:rgb(241, 138, 40);
+    background-color: rgba(242, 168, 41, 0.4);
+}
+
+.San_E_parent {
+    
+}
+
+button.button p{
+    display: none;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 5%;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}
+
+button.button_ad, button.button {
+    height: 0px;
+    padding: 0px;
+    border-width: 0px;
+}
+
+button.button_ad p{
+    display: inline;
+    position: absolute;
+    right: 10%;
+    top: 6%;
+    width: 10px;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+body .container div table tbody tr td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+.name {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+/*add the css (after first 수정)*/
+
+.concert_timetable {
+    background-color: #334d5c;
+}
+
+.concert_icon {
+    width: 30%;
+    margin-left: 35%;
+
+}
+
+.concert_icon img {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.time {
+    color: gray;
+}
+
+.table-responsive {
+    background-color: white;
+}
+
+.time {
+    font-size: 1.02rem ;
+}
+
+.name {
+    font-size: 1.04rem;
+} 
+
+th {
+    background-color: #a6bfce;
+}
+
+.busking_timetable {
+    background-color: #90dfaa;
+}
+
+.flex.container:before,
+.flex.container:after,
+.flexthis.row:before,
+.flexthis.row:after {
+   content: normal; 
+}
+
+th.busking_th {
+    background-color: #ffb5a8;
+}
+
+.container .blank {
+    height: 60px;
+    background-color: white;
+}
+
+.time {
+    width: 20%;
+}
+
+.name {
+    width: 80%;
+}
+.blank {
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+}
+p.lunchtime {
+    display: inline;
+}
+.blank div {
+    display: inline-block;
+    margin-left: 50%;
+    padding-top: 20px;
+}
+
+@media only screen and (min-width: 768px){
+    div.San_E{
+        width: 500px;
+        max-height: 600px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}    
+/*여기까지 태수꺼*/
+
+/*.booth-img{*/
+/*    background-color:gray;*/
+/*}*/
+
+body div .helloitsme {
+    margin-left: 15px;
+    margin-right: 0;
+}
