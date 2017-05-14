@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-    
 <!--태진-->
     <script
              src="https://code.jquery.com/jquery-3.2.1.js"
@@ -121,11 +118,10 @@
     <!--태진-->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="<script class="js"></script>"></script>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="/resources/demos/style.css">
+        <%= stylesheet_link_tag "team3style.css" %>
+        <%= javascript_include_tag "team3js.js" %>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script>
@@ -135,9 +131,7 @@
         </script>
      <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--<link rel="stylesheet" type="text/css" href="stylesheet.css">-->
-      <%= stylesheet_link_tag "team1style.css" %>
-      <link rel="stylesheet" type="text/css" href="/font-awesome-4.7.0/css/font-awesome.css">
+      <%= stylesheet_link_tag "font_awesome.css" %>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!--태진-->
     
@@ -150,10 +144,10 @@
     <title>2017 U-Festival</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <%= stylesheet_link_tag "bootstrap.min.css" %>
 
     <!-- Custom CSS -->
-    <link href="css/half-slider.css" rel="stylesheet">
+    <%= stylesheet_link_tag "half_slider.css" %>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -164,8 +158,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>jQuery UI Accordion - Default functionality</title>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
@@ -179,7 +173,7 @@
 
      <!--Navigation -->
   
-    <nav class="navbarfont navbar navbar-inverse navbar-fixed-top fill-navigation px-0 md-nav-cut" role="navigation" style="background-image:url('/img/navbarimg.png');">
+    <nav class="navbarfont navbar navbar-inverse navbar-fixed-top fill-navigation px-0 md-nav-cut" role="navigation" style="background-image:url('<%=image_path("team3/navbarimg.png")%>');">
           <div class="container mx-0 mx-sm-auto px-0 col-12 w-100">
                <!--Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header container px-0 mx-0 col-12 w-100">
@@ -219,12 +213,12 @@
     <div class="container scroll-link px-0 mx-0 md-display-none" id="whatthe" style="width: 100%; margin-bottom: 0.5vh; margin-top: 5.5vh">
       <div class="item d-flex">
         <div class="item-scroll-link mx-0 px-0" style="width:50%;" >
-          <div class="fill d-flex justify-content-center align-items-end" id="busking-icon" style="background-image:url('/img/microphone.png'); background-size: auto 100%; background-repeat: no-repeat; background-color: #7cd5ff">
+          <div class="fill d-flex justify-content-center align-items-end" id="busking-icon" style="background-image:url('<%=image_path("team3/microphone.png")%>'); background-size: auto 100%; background-repeat: no-repeat; background-color: #7cd5ff">
             <div class="info-guide d-flex align-items-center justify-content-center" style="background-color: #0275d8;">주간 버스킹 일정</div>
           </div>
         </div>
         <div class="item-scroll-link mx-0 px-0" style="border: 4px solid DarkOrenge; width:50%;">
-          <div class="fill d-flex justify-content-center align-items-end" id="mornging-icon" style="background-image:url('/img/booth.png'); background-size: auto 100%; background-repeat: no-repeat; background-color: #7cd5ff">
+          <div class="fill d-flex justify-content-center align-items-end" id="mornging-icon" style="background-image:url('<%=image_path("team3/booth.png")%>'); background-size: auto 100%; background-repeat: no-repeat; background-color: #7cd5ff">
             <div class="info-guide d-flex align-items-center justify-content-center" style="background-color: #0275d8;">주간 부스 정보</div>
           </div>
         </div>
@@ -245,35 +239,35 @@
         <div class="carousel-inner">
             <div class="item active">
                  <!--Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('/img/공연2.png');"></div>
+                <div class="fill" style="background-image:url('<%=image_path("team3/concert2.png")%>');"></div>
                 <div class="carousel-caption">
                     <h2>연예인 초청 무대</h2>
                 </div>
             </div>
             <div class="item">
                  <!--Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('/img/주간부스.png');"></div>
+                <div class="fill" style="background-image:url('<%=image_path("team3/morning_booth.png")%>');"></div>
                 <div class="carousel-caption">
                     <h2>주간부스</h2>
                 </div>
             </div>
             <div class="item">
                  <!--Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('/img/공연5.png');"></div>
+                <div class="fill" style="background-image:url('<%=image_path("team3/concert5.png")%>');"></div>
                 <div class="carousel-caption">
                     <h2>동아리 공연</h2>
                 </div>
             </div>
             <div class="item">
                  <!--Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('/img/전야제.png');"></div>
+                <div class="fill" style="background-image:url('<%=image_path("team3/jeonyajae.png")%>');"></div>
                 <div class="carousel-caption">
                     <h2>전야제</h2>
                 </div>
             </div>
             <div class="item">
                  <!--Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('/img/주간이벤트.png');"></div>
+                <div class="fill" style="background-image:url('<%=image_path("team3/morning_event.png")%>');"></div>
                 <div class="carousel-caption">
                     <h2>주간 이벤트</h2>
                 </div>
@@ -291,12 +285,12 @@
     <div class="container px-0 mx-0 md-display-none" style="height: 20vh; width: 100%; margin-top: 0.5vh;">
       <div class="item d-flex">
         <div class="item-scroll-link mx-0 px-0" style="width:50%;" >
-          <div class="fill d-flex justify-content-center align-items-end" id="concert-icon" style="background-image:url('/img/concert.png'); background-size: auto 100%; background-repeat: no-repeat; background-color: #1e3760">
+          <div class="fill d-flex justify-content-center align-items-end" id="concert-icon" style="background-image:url('<%=image_path("team3/concert.png")%>'); background-size: auto 100%; background-repeat: no-repeat; background-color: #1e3760">
             <div class="info-guide d-flex align-items-center justify-content-center" style="background-color: black;">야간 공연 일정</div>
           </div>
         </div>
         <div class="item-scroll-link mx-0 px-0" style="border: 4px solid DarkOrenge; width:50%;">
-          <div class="fill d-flex justify-content-center align-items-end" id="night-icon" style="background-image:url('/img/beer.png'); background-size: auto 100%; background-repeat: no-repeat; background-color: #1e3760">
+          <div class="fill d-flex justify-content-center align-items-end" id="night-icon" style="background-image:url('<%=image_path("team3/beer.png")%>'); background-size: auto 100%; background-repeat: no-repeat; background-color: #1e3760">
             <div class="info-guide d-flex align-items-center justify-content-center" style="background-color: black;">야간 부스 정보</div>
           </div>
         </div>
@@ -321,7 +315,8 @@
     <!--<script src="js/jquery.js"></script>-->
 
      <!--Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
 
      <!--Script to Activate the Carousel -->
     <script>
@@ -339,7 +334,6 @@
     </script>
     
     
-    <!--<script src="//code.jquery.com/jquery.min.js"></script>-->
     
    
     
@@ -362,7 +356,7 @@
                 
                 <h3> 축준위 부스 </h3>
                 <div class="card">
-                  <img class="card-img-top" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <img class="card-img-top" src="<%=image_path("team3/booth_where.png")%>" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title"> 교복 대여 / 포토 부스 </h4>
                     <p class="card-text"> (교복대여)학창시절의 느낌을 물씬 느끼게 해주는 이쁜 교복을 대여해 주는부스 사진은 덤! </p>
@@ -380,7 +374,7 @@
                
                 <h3> 축준위 부스 2  </h3>
                 <div class="card">
-                  <img class="card-img-top" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <img class="card-img-top" src="<%=image_path("team3/booth_where.png")%>" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title">(살수대첩/ 축준위를 이겨라)</h4>
                     <p class="card-text"> (살수대첩) 세명이 힘을 합쳐 풀장 안의 물을 모두 퍼내라! 쏟아지는 물 속에 더위를 날려버리세요~ 
@@ -396,7 +390,7 @@
                 
                 <h3> 뷰티버스킹 </h3>
                 <div class="card">
-                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/booth_where.png")%>" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title"> 위치1 </h4>
                     <p class="card-text"> 헤어스타일링, 수정메이크업, 풀메이크업
@@ -410,7 +404,7 @@
                 
                 <h3> 손금+사주 </h3>
                 <div class="card">
-                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/booth_where.png")%>" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title"> 위치2 </h4>
                     <p class="card-text">  </p>
@@ -423,7 +417,7 @@
                 
                 <h3> 비비임집 </h3>
                 <div class="card">
-                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/booth_where.png")%>" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title"> 위치3 </h4>
                     <p class="card-text"> 목살비빔면 </p>
@@ -436,7 +430,7 @@
              
                 <h3> 인액기스 </h3>
                 <div class="card">
-                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/booth_where.png")%>" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title"> 위치4 </h4>
                     <p class="card-text"> 프로젝트 '화사'의 토피어리 제품 </p>
@@ -460,7 +454,7 @@
               주간 버스킹(11:00~17:00)
           </div>
           <div class="concert_icon">
-            <img src="<%=image_path("team3/img/acoustic-guitar.png")%>">
+            <img src="<%=image_path("team3/acoustic_guitar.png")%>">
           </div>
           <div class="table-responsive" style="margin-bottom: 0;">
             <table class="table table-hover" style="margin-bottom: 0;">
@@ -572,7 +566,7 @@
                   
                   <h3> 송실장이 포차캤다  </h3>
                   <div class="card">
-                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <img class="card-img-top" src="<%=image_path("team3/booth_night.png")%>" alt="card image cap">
                     <div class="card-block">
                       <h4 class="card-title">  </h4>
                       <p class="card-text"> 위치1  </p>
@@ -585,7 +579,7 @@
                   
                   <h3> 전설의 복학생</h3>
                   <div class="card">
-                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <img class="card-img-top" src="<%=image_path("team3/booth_night.png")%>" alt="card image cap">
                     <div class="card-block">
                       <h4 class="card-title">  </h4>
                       <p class="card-text"> 위치2  </p>
@@ -598,7 +592,7 @@
                   
                   <h3> 야간 자율학습</h3>
                   <div class="card">
-                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <img class="card-img-top" src="<%=image_path("team3/booth_night.png")%>" alt="card image cap">
                     <div class="card-block">
                       <h4 class="card-title">  </h4>
                       <p class="card-text"> 위치3  </p>
@@ -611,7 +605,7 @@
                 
                 <h3> 교무실 </h3>
                   <div class="card">
-                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <img class="card-img-top" src="<%=image_path("team3/booth_night.png")%>" alt="card image cap">
                     <div class="card-block">
                       <h4 class="card-title">  </h4>
                       <p class="card-text"> 위치4  </p>
@@ -634,7 +628,7 @@
                 야간 공연(18:30~24:00)
             </div>
             <div class="concert_icon">
-              <img src="<%=image_path("team3/img/heavy-metal.png")%>">
+              <img src="<%=image_path("team3/heavy_metal.png")%>">
             </div>
             <div class="table-responsive">
               <table class="table table-hover">
@@ -713,21 +707,21 @@
         <div class="container d-flex flex-row" style="width: 100%; height: 100%; top: -26vh">
           <div class="d-flex flex-row" style="width: 50%; height: 100%; flex-wrap: wrap;">
             <div style="width: 100%; height: 60%;">
-              <div class="fill" style="background-image:url('/img/공연2.png');"></div>
+              <div class="fill" style="background-image:url('<%=image_path("team3/concert2.png")%>');"></div>
             </div>
             <div style="width: 50%; height: 40%;">
-              <div class="fill" style="background-image:url('/img/주간이벤트.png');"></div>
+              <div class="fill" style="background-image:url('<%=image_path("team3/morning_event.png")%>');"></div>
             </div>
             <div style="width: 50%; height: 40%;">
-              <div class="fill" style="background-image:url('/img/전야제.png');"></div>
+              <div class="fill" style="background-image:url('<%=image_path("team3/jeonyajae.png")%>');"></div>
             </div>
           </div>
           <div class="d-flex flex-row" style="width: 50%; height: 100%; flex-wrap: wrap;">
             <div style="width: 100%; height: 50%">
-              <div class="fill" style="background-image:url('/img/주간부스.png');"></div>
+              <div class="fill" style="background-image:url('<%=image_path("team3/morning_booth.png")%>');"></div>
             </div>
             <div style="black; width: 100%; height: 50%">
-              <div class="fill" style="background-image:url('/img/공연5.png');"></div>
+              <div class="fill" style="background-image:url('<%=image_path("team3/concert5.png")%>');"></div>
             </div>
           </div>
         </div>
@@ -749,7 +743,7 @@
                 
                 <h3> 축준위 부스 </h3>
                 <div class="card">
-                  <img class="card-img-top" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <img class="card-img-top" src="<%=image_path("team3/booth_where.png")%>" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title"> 교복 대여 / 포토 부스 </h4>
                     <p class="card-text"> (교복대여)학창시절의 느낌을 물씬 느끼게 해주는 이쁜 교복을 대여해 주는부스 사진은 덤! </p>
@@ -767,7 +761,7 @@
                
                 <h3> 축준위 부스 2  </h3>
                 <div class="card">
-                  <img class="card-img-top" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <img class="card-img-top" src="<%=image_path("team3/booth_where.png")%>" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title">(살수대첩/ 축준위를 이겨라)</h4>
                     <p class="card-text"> (살수대첩) 세명이 힘을 합쳐 풀장 안의 물을 모두 퍼내라! 쏟아지는 물 속에 더위를 날려버리세요~ 
@@ -783,7 +777,7 @@
                 
                 <h3> 뷰티버스킹 </h3>
                 <div class="card">
-                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/booth_where.png")%>" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title"> 위치1 </h4>
                     <p class="card-text"> 헤어스타일링, 수정메이크업, 풀메이크업
@@ -797,7 +791,7 @@
                 
                 <h3> 손금+사주 </h3>
                 <div class="card">
-                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/booth_where.png")%>" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title"> 위치2 </h4>
                     <p class="card-text">  </p>
@@ -810,7 +804,7 @@
                 
                 <h3> 비비임집 </h3>
                 <div class="card">
-                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/booth_where.png")%>" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title"> 위치3 </h4>
                     <p class="card-text"> 목살비빔면 </p>
@@ -823,7 +817,7 @@
              
                 <h3> 인액기스 </h3>
                 <div class="card">
-                  <img class="card-img-top booth-img" src="<%=image_path("team3/img/booth-where.png")%>" alt="Card image cap">
+                  <img class="card-img-top booth-img" src="<%=image_path("team3/booth_where.png")%>" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title"> 위치4 </h4>
                     <p class="card-text"> 프로젝트 '화사'의 토피어리 제품 </p>
@@ -846,7 +840,7 @@
               주간 버스킹(11:00~17:00)
           </div>
           <div class="concert_icon">
-            <img src="<%=image_path("team3/img/acoustic-guitar.png")%>">
+            <img src="<%=image_path("team3/acoustic_guitar.png")%>">
           </div>
           <div class="table-responsive" style="margin-bottom: 0;">
             <table class="table table-hover" style="margin-bottom: 0;">
@@ -955,7 +949,7 @@
                   
                   <h3> 송실장이 포차캤다  </h3>
                   <div class="card">
-                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <img class="card-img-top" src="<%=image_path("team3/booth_night.png")%>" alt="card image cap">
                     <div class="card-block">
                       <h4 class="card-title">  </h4>
                       <p class="card-text"> 위치1  </p>
@@ -968,7 +962,7 @@
                   
                   <h3> 전설의 복학생</h3>
                   <div class="card">
-                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <img class="card-img-top" src="<%=image_path("team3/booth_night.png")%>" alt="card image cap">
                     <div class="card-block">
                       <h4 class="card-title">  </h4>
                       <p class="card-text"> 위치2  </p>
@@ -981,7 +975,7 @@
                   
                   <h3> 야간 자율학습</h3>
                   <div class="card">
-                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <img class="card-img-top" src="<%=image_path("team3/booth_night.png")%>" alt="card image cap">
                     <div class="card-block">
                       <h4 class="card-title">  </h4>
                       <p class="card-text"> 위치3  </p>
@@ -994,7 +988,7 @@
                 
                 <h3> 교무실 </h3>
                   <div class="card">
-                    <img class="card-img-top" src="<%=image_path("team3/img/booth-night.png")%>" alt="card image cap">
+                    <img class="card-img-top" src="<%=image_path("team3/booth_night.png")%>" alt="card image cap">
                     <div class="card-block">
                       <h4 class="card-title">  </h4>
                       <p class="card-text"> 위치4  </p>
@@ -1018,7 +1012,7 @@
                 야간 공연(18:30~24:00)
             </div>
             <div class="concert_icon">
-              <img src="<%=image_path("team3/img/heavy-metal.png")%>">
+              <img src="<%=image_path("team3/heavy_metal.png")%>">
             </div>
             <div class="table-responsive">
               <table class="table table-hover">
@@ -1100,15 +1094,13 @@
      <!--Footer -->
       <footer class="container d-flex justify-content-center px-0">
           <div class="row footer-inner d-flex justify-content-center px-0 mx-0">
-              <div class="fill logos2 m-2" style="background-image:url('/img/총학로고.png')"></div>
-              <div class="fill logos2 m-2" style="background-image:url('/img/동연회 로고.jpg');"></div>
-              <div class="fill logos1 m-2" style="background-image:url('/img/인감 로고.jpg')"></div>
-              <div class="fill logos1 m-2" style="background-image:url('/img/멋사로고.png');"></div>
-              <div class="fill logos2 m-2" style="background-image:url('/img/유니스트 로고.png');"></div>
+              <div class="fill logos2 m-2" style="background-image:url('<%=image_path("team3/chonghak_logo.png")%>')"></div>
+              <div class="fill logos2 m-2" style="background-image:url('<%=image_path("team3/dongyeon_logo.jpg")%>');"></div>
+              <div class="fill logos1 m-2" style="background-image:url('<%=image_path("team3/ingam_logo.jpg")%>')"></div>
+              <div class="fill logos1 m-2" style="background-image:url('<%=image_path("team3/likelion_logo.png")%>');"></div>
+              <div class="fill logos2 m-2" style="background-image:url('<%=image_path("team3/unist_logo.png")%>');"></div>
           </div>
            <!--/.row -->
       </footer>
 
 </body>
-
-</html>

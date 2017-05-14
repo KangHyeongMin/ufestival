@@ -3,21 +3,21 @@
 
 /*폰트 지정*/
 
-@font-face {/*현재 이 폰트가 먹히지 않음...*/
+@font-face {
     font-family: 'inkliquid'; 
-    src: url('fonts/thefaceshopinkliquid.woff') format('woff');
+    src: url('/fonts/thefaceshopinkliquid.woff') format('woff');
 }
 @font-face {
     font-family: 'meccanicabold';
-    src: url('fonts/meccanica-bold-webfont.woff2') format('woff2'),
-         url('fonts/meccanica-bold-webfont.woff') format('woff');
+    src: url('/fonts/meccanica-bold-webfont.woff2') format('woff2'),
+         url('/fonts/meccanica-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'BMDOHYEON';
-    src: url('fonts/BMDOHYEON_ttf.woff') format('woff');
+    src: url('/fonts/BMDOHYEON_ttf.woff') format('woff');
     
     
 }
