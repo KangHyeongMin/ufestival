@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
-  root 'home#index'
-  get 'home/index'
+  root 'home#team2'
+  get 'home/index' => 'home#team2'
   get 'team1' => 'home#team1'
   get 'team2' => 'home#team2'
   get 'team3' => 'home#team3'
