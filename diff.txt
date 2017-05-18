@@ -1,0 +1,96 @@
+diff --git a/app/assets/stylesheets/team2style.css b/app/assets/stylesheets/team2style.css
+index 67c7104..64d9bc6 100644
+--- a/app/assets/stylesheets/team2style.css
++++ b/app/assets/stylesheets/team2style.css
+@@ -1,10 +1,8 @@
+-/*@import url(//fonts.googleapis.com/earlyaccess/hanna.css);*/
+-
+ *
+ {
+     margin:0;
+-    /*font-family: 'hanna', serif;*/
+     font-family:BMDOHYEON_ttf;
++    font-family:BMDOHYEON_otf;
+ }
+ div .btn-outline-info
+ {
+@@ -17,15 +15,14 @@ div .btn-outline-info:hover
+ }
+ @font-face
+ {
+-    font-family: BMDOHYEON_otf;
+     font-family: BMDOHYEON_ttf;
+-    
+-    src: url(/fonts/BMDOHYEON_ttf.ttf);
+-    src: url(/fonts/BMDOHYEON_otf.otf);
++    font-family: BMDOHYEON_otf;
++    src: url(BMDOHYEON_ttf.ttf);
++    src: url(BMDOHYEON_otf.otf);
+ }
+ .background{
+     height:100vh;
+-    /*background-image: url(/festival_back.jpeg);*/
++    background-image: url(/festival_back.jpeg);
+     background-size: cover;
+ }
+ .main_con
+@@ -204,6 +201,10 @@ div .btn-outline-info:hover
+         margin:10 10;
+         width:80%;
+     }
++    body .events
++{
++    width:100%;    
++}
+ }
+ 
+ @media screen and (max-width: 1800px) and (min-width: 500px) {
+@@ -226,24 +227,35 @@ div .btn-outline-info:hover
+     /* new custom width */
+     max-width: 1000px;
+     /* must be half of the width, minus scrollbar on the left (30px) */
+-}
+     
+ }
++    body .events
++{
++    width:30%;    
++}
++
++}
+ 
+ .chong_cov{
+     width:100px;
+     height:50px;
+ }
+ 
+-.mynav{
++.navbar{
++    display: flex;
++    flex-direction: row;
+     justify-content:space-between;
+     background-color:#f2f2f2;
+ }
+-
+-.mynav2{
+-    justify-content:flex-end;
++#navbarTogglerDemo02{
++    width: 20%;
++  
+ }
+ 
++/*.mynav2{*/
++/*    justify-content:flex-end;*/
++/*}*/
++
+ .btn-primary:active, .btn-primary.active {
+     background: #007299;
+     box-shadow: none;
+@@ -252,4 +264,5 @@ div .btn-outline-info:hover
+ .modal-content {
+     
+     width: 100% ;
+-}
+\ No newline at end of file
++}
++

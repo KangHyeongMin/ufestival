@@ -34,6 +34,10 @@ div .btn-outline-info:hover
     width:100%;
     background-color:rgba(195, 203, 216, 0.7);
 }
+body .events
+{
+    width:30%;    
+}
 .young
 {
     display:flex;
@@ -235,14 +239,21 @@ div .btn-outline-info:hover
     height:50px;
 }
 
-.mynav{
+.navbar{
+    display: flex;
+    flex-direction: row;
     justify-content:space-between;
     background-color:#f2f2f2;
 }
 
-.mynav2{
-    justify-content:flex-end;
+#navbarTogglerDemo02{
+    width: 20%;
+  
 }
+
+/*.mynav2{*/
+/*    justify-content:flex-end;*/
+/*}*/
 
 .btn-primary:active, .btn-primary.active {
     background: #007299;

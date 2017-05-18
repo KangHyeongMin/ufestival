@@ -16,22 +16,35 @@
     </head>
     <body>
         <!-- 네비게이션 바 -->
-        <nav class="d-flex align-items-center d-flex-row mynav">
-          <!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">-->
-          <!--  <span class="navbar-toggler-icon"></span>-->
-          <!--</button>-->
-<!-- 지우지마 -->
-          <h2 href="#" style="width:50%; line-height:50px; font-size:20px; margin-left:2%; margin-bottom:0"> UNIST 9th S/F</h2>
-<!-- 지우지마 -->
-          <div class="d-flex d-flex-row mynav2" style="width:40%">
-                <button type="button" class="nav-link btn btn-secondary btn-sm change_korean" href="">KOR</button><button type="button"  class="nav-link btn btn-secondary btn-sm change_english" href="">ENG</button>
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded f_spbt">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">UNIST 9th S/F</a>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+              <li class="nav-item active">
+                <a class="nav-link en" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link ko" href="/">Home <span class="sr-only">(current)</span></a>  
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ko" href="#" data-toggle="modal" data-target="#myModal4" href="">행사</a>
+                <a class="nav-link en" href="#" data-toggle="modal" data-target="#myModal4" href="">Events</a>
+              </li>
+              <li class="nav-item">
+                <div class="d-flex d-flex-row justify-content-start mynav2"> <!--한영변환 네브-->
+                  <button type="button" class="nav-link btn btn-secondary btn-sm change_korean" href="">KOR</button><button type="button"  class="nav-link btn btn-secondary btn-sm change_english" href="">ENG</button>
+                </div>
+              </li>
+            </ul>
           </div>
         </nav>
  
         <!-- 포스터 -->
         <div class="background d-flex justify-content-center flex-column align-items-center" style="background-image: url('<%=image_path("team2/festival_back.jpg")%>');"> 
             <div class="main_con d-flex justify-content-center flex-column align-items-center">            
-                <div class="young my-2"><div class="young2 ko">U-Festival</div><div class="young2 en">CHEONGCHUN-IYA</div></div>
+                <div class="young my-2"><div class="young2 ko">U-Festival</div><div class="young2 en">U-Festival</div></div>
                 <div class="d-flex flex-row my-3">
                     <button type="button" class="btn btn-outline-info ko btn-lg" data-toggle="modal" data-target="#myModal" href=""><div class="ko" style="font-size:25px">주간</div></button>
                     <button type="button" class="btn btn-outline-info en btn-lg" data-toggle="modal" data-target="#myModal" href=""><div class="en" style="font-size:25px">&nbspDay&nbsp</div></button>
@@ -53,10 +66,11 @@
                       <div class="modal-body">
                         <div class="inside_popup">
                           <div class="p_list">
-                            <img class="ko btn-lg booth_img col-lg-4 col-md-4 col-sm-12" src="<%=image_path("team2/day_time_ko.png")%>">
-                            <img class="en btn-lg booth_img col-lg-4 col-md-4 col-sm-12" src="<%=image_path("team2/day_time_en.png")%>">
-                            <img class="A col-lg-3 col-md-3 col-sm-12" src="<%=image_path("team2/day_A.png")%>">
-                            <img class="B col-lg-3 col-md-3 col-sm-12" src="<%=image_path("team2/day_B.png")%>">
+                          <a class="col-lg-3 col-md-3 col-sm-12 ko" href=""><img border="0" alt="W3Schools" src="<%=image_path("team2/day_en.png")%>" class = "w-100"></a>
+                            <a class="col-lg-3 col-md-3 col-sm-12 en" href="https://docs.google.com/spreadsheets/d/1HnWQSTDUKn_uhMzeMhTfenrUoyOSgETyAPivlTnydGk/edit#gid=0"><img border="0" alt="W3Schools" src="<%=image_path("team2/day_en.png")%>" class = "w-100"></a>
+                            <a class="col-lg-3 col-md-3 col-sm-12" href="https://docs.google.com/spreadsheets/d/1HnWQSTDUKn_uhMzeMhTfenrUoyOSgETyAPivlTnydGk/edit#gid=0"><img border="0" alt="W3Schools" src="<%=image_path("team2/day_A.png")%>" class = "w-100"></a>
+                            <a class="col-lg-3 col-md-3 col-sm-12" href="https://docs.google.com/spreadsheets/d/1HnWQSTDUKn_uhMzeMhTfenrUoyOSgETyAPivlTnydGk/edit#gid=0"><img border="0" alt="W3Schools" src="<%=image_path("team2/day_B.png")%>" class = "w-100"></a>
+                            <a class="col-lg-3 col-md-3 col-sm-12" href="https://docs.google.com/spreadsheets/d/1HnWQSTDUKn_uhMzeMhTfenrUoyOSgETyAPivlTnydGk/edit#gid=0"><img border="0" alt="W3Schools" src="<%=image_path("team2/night_BAB.png")%>" class = "w-100"></a>
                           </div>
                           <button type="button" class="close" data-dismiss="modal" style="font-size:50px">&times;</button>
                         </div>
@@ -77,11 +91,10 @@
                       <div class="modal-body">
                         <div class="inside_popup">
                           <div class="p_list">
-                            <img src="<%=image_path("team2/night_time_ko.png")%>" class="ko btn-lg booth_img col-lg-3 col-md-3 col-sm-12">
-                            <img src="<%=image_path("team2/night_time_en.png")%>" class="en btn-lg booth_img col-lg-3 col-md-3 col-sm-12">
-                            <img src="<%=image_path("team2/night_A.png")%>" class="A col-lg-3 col-md-3 col-sm-12">
-                            <img src="<%=image_path("team2/night_B.png")%>" class="B col-lg-3 col-md-3 col-sm-12">
-                            <img src="<%=image_path("team2/night_BAB.png")%>" class="BAB col-lg-3 col-md-3 col-sm-12">
+                            <a class="col-lg-3 col-md-3 col-sm-12 ko" href="https://docs.google.com/spreadsheets/d/1HnWQSTDUKn_uhMzeMhTfenrUoyOSgETyAPivlTnydGk/edit#gid=0"><img border="0" alt="W3Schools" src="<%=image_path("team2/night_ko.png")%>" class = "w-100"></a>
+                            <a class="col-lg-3 col-md-3 col-sm-12 en" href="https://docs.google.com/spreadsheets/d/1HnWQSTDUKn_uhMzeMhTfenrUoyOSgETyAPivlTnydGk/edit#gid=0"><img border="0" alt="W3Schools" src="<%=image_path("team2/night_en.png")%>" class = "w-100"></a>
+                            <a class="col-lg-3 col-md-3 col-sm-12" href="https://docs.google.com/spreadsheets/d/1HnWQSTDUKn_uhMzeMhTfenrUoyOSgETyAPivlTnydGk/edit#gid=0"><img border="0" alt="W3Schools" src="<%=image_path("team2/night_A.png")%>" class = "w-100"></a>
+                            <a class="col-lg-3 col-md-3 col-sm-12" href="https://docs.google.com/spreadsheets/d/1HnWQSTDUKn_uhMzeMhTfenrUoyOSgETyAPivlTnydGk/edit#gid=0"><img border="0" alt="W3Schools" src="<%=image_path("team2/night_B.png")%>" class = "w-100"></a>
                           </div>
                           <button type="button" class="close" data-dismiss="modal"style="font-size:50px">&times;</button>
                         </div>
@@ -106,6 +119,30 @@
                           <div class="p_list2">
                             <img class="San" src="<%=image_path("team2/SanE.jpg")%>">
                             <img class="schedule" src="<%=image_path("team2/schedule.png")%>">
+                          </div>
+                          <button type="button" class="close" data-dismiss="modal"style="font-size:50px">&times;</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--모달4-->
+                <div id="myModal4" class="modal fade" role="dialog">
+                  <div class="modal-dialog modal-lg">
+                
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+<!--                        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                        <h4 class="modal-title ko btn-lg">행사</h4>
+                        <h4 class="modal-title en btn-lg">Events</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="inside_popup">
+                          <div class="p_list">                        
+                            <a class="col-lg-4 col-md-4 col-sm-12 ml-0 mr-0" href=""><img border="0" alt="W3Schools" src="<%=image_path("team2/event_A.jpg")%>" class = "w-100"></a>
+                            <a class="col-lg-4 col-md-4 col-sm-12 ml-0 mr-0" href=""><img border="0" alt="W3Schools" src="<%=image_path("team2/event_B.jpg")%>" class = "w-100"></a>
+                            <a class="col-lg-4 col-md-4 col-sm-12 ml-0 mr-0" href=""><img border="0" alt="W3Schools" src="<%=image_path("team2/event_C.jpg")%>" class = "w-100"></a>
                           </div>
                           <button type="button" class="close" data-dismiss="modal"style="font-size:50px">&times;</button>
                         </div>
